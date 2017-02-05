@@ -19,7 +19,7 @@ export default {
     return (
       <TouchableOpacity onPress={NavigationActions.pop}>
         <Icon name='angle-left'
-          size={Metrics.icons.large}
+          size={Metrics.icons.small}
           color={Colors.snow}
           style={styles.backButton}
         />
@@ -31,7 +31,7 @@ export default {
     return (
       <TouchableOpacity onPress={openDrawer}>
         <Icon name='bars'
-          size={Metrics.icons.medium}
+          size={Metrics.icons.small}
           color={Colors.snow}
           style={styles.navButtonLeft}
         />

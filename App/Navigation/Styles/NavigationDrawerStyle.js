@@ -7,6 +7,6 @@ export default {
     backgroundColor: Colors.background
   },
   main: {
-    backgroundColor: Colors.clear
+    backgroundColor: Colors.ember
   }
 }

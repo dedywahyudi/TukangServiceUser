@@ -21,7 +21,9 @@ import APITestingScreen from '../Containers/APITestingScreen'
 import ThemeScreen from '../Containers/ThemeScreen'
 import DeviceInfoScreen from '../Containers/DeviceInfoScreen'
 
-import TabHome from '../Containers/TabHome'
+import TabHome from '../Containers/TabHome/'
+import TabMyServices from '../Containers/TabMyServices/'
+import TabProfileLogin from '../Containers/TabMyAccount/TabProfileLogin'
 
 import TabIcon from '../Navigation/TabIcon'
 
@@ -30,12 +32,13 @@ import TabIcon from '../Navigation/TabIcon'
 ***************************/
 
 class NavigationRouter extends Component {
+
   render () {
     return (
       <Router>
         <Scene key='drawer' component={NavigationDrawer} open={false}>
           <Scene key='drawerChildrenWrapper' navigationBarStyle={Styles.navBar} titleStyle={Styles.title} leftButtonIconStyle={Styles.leftButton} rightButtonTextStyle={Styles.rightButton}>
-            <Scene initial key='presentationScreen' component={PresentationScreen} title='Ignite' renderLeftButton={NavItems.hamburgerButton} />
+            <Scene key='presentationScreen' component={PresentationScreen} title='Ignite' renderLeftButton={NavItems.hamburgerButton} />
             <Scene key='componentExamples' component={AllComponentsScreen} title='Components' />
             <Scene key='usageExamples' component={UsageExamplesScreen} title='Usage' rightTitle='Example' onRight={() => window.alert('Example Pressed')} />
             <Scene key='login' component={LoginScreen} title='Login' hideNavBar />
@@ -49,6 +52,68 @@ class NavigationRouter extends Component {
 
             {/* Custom navigation bar example */}
             <Scene key='deviceInfo' component={DeviceInfoScreen} title='Device Info' />
+            <Scene
+              key="tabBar"
+              open={false}
+              initial
+            >
+              <Scene
+                key="main"
+                tabs
+                tabBarStyle={Styles.tabBarStyle}
+                tabBarSelectedItemStyle={Styles.tabBarSelectedItemStyle}
+              >
+                <Scene
+                  key="tabHome"
+                  navigationBarStyle={Styles.navBar}
+                  iconName="home"
+                  title="Home"
+                  icon={TabIcon}
+                >
+                  <Scene
+                    key="tabHomeStart"
+                    component={TabHome}
+                    title="Home"
+                    titleStyle={Styles.title}
+                    renderLeftButton={NavItems.hamburgerButton}
+                  />
+                </Scene>
+                <Scene
+                  key="tabMyServices"
+                  navigationBarStyle={Styles.navBar}
+                  title="My Services"
+                  iconName="history"
+                  icon={TabIcon}
+                >
+                  <Scene
+                    key="tabMyServicesStart"
+                    component={TabMyServices}
+                    title="My Services"
+                    titleStyle={Styles.title}
+                    renderLeftButton={NavItems.hamburgerButton}
+                    // renderLeftButton={this.renderMenuButton}
+                    // renderRightButton={this.renderRightButton}
+                  />
+                </Scene>
+                <Scene
+                  key="tabMyProfile"
+                  navigationBarStyle={Styles.navBar}
+                  title="My Account"
+                  iconName="person"
+                  icon={TabIcon}
+                >
+                  <Scene
+                    key="tabProfileLogin"
+                    component={TabProfileLogin}
+                    title="My Account"
+                    titleStyle={Styles.title}
+                    renderLeftButton={NavItems.hamburgerButton}
+                    // renderLeftButton={this.renderMenuButton}
+                    // renderRightButton={this.renderRightButton}
+                  />
+                </Scene>
+              </Scene>
+            </Scene>
           </Scene>
         </Scene>
       </Router>

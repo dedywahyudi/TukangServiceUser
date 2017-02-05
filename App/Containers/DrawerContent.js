@@ -50,7 +50,12 @@ class DrawerContent extends Component {
 
   handlePressTabHome = () => {
     this.toggleDrawer()
-    NavigationActions.tabHome()
+    NavigationActions.tabBar()
+  }
+
+  handlePressPresentationScreen = () => {
+    this.toggleDrawer()
+    NavigationActions.presentationScreen()
   }
 
   render () {
@@ -58,6 +63,7 @@ class DrawerContent extends Component {
       <ScrollView style={styles.container}>
         <Image source={Images.logo} style={styles.logo} />
         <DrawerButton text='Tab Home' onPress={this.handlePressTabHome} />
+        <DrawerButton text='Presentation Screen' onPress={this.handlePressPresentationScreen} />
         <DrawerButton text='Component Examples' onPress={this.handlePressComponents} />
         <DrawerButton text='Usage Examples' onPress={this.handlePressUsage} />
         <DrawerButton text='API Testing' onPress={this.handlePressAPI} />

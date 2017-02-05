@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import { ScrollView, View, Text, TouchableOpacity } from 'react-native';
-// import { Container, Text, Button, Icon } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 import HomeSwiper from './HomeSwiper';
 import styles from './Styles/TabHome'
-// import CircleButton from '../Components/CircleButton'
-import Icon from 'react-native-vector-icons/FontAwesome'
-// import theme from '../themes/base-theme';
+import Icon from 'react-native-vector-icons/MaterialIcons'
 
 class TabHome extends Component { // eslint-disable-line
 
@@ -26,7 +23,7 @@ class TabHome extends Component { // eslint-disable-line
                   <View style={styles.itemColumn}>
                     <View style={styles.itemRow}>
                       <TouchableOpacity rounded style={styles.buttonAlign} onPress={Actions.inputHardware}>
-                        <Icon style={styles.iconAlign} name="desktop" />
+                        <Icon style={styles.iconAlign} name="desktop-mac" />
                       </TouchableOpacity>
                     </View>
                     <View style={styles.itemRow}>
@@ -72,7 +69,7 @@ class TabHome extends Component { // eslint-disable-line
                   <View style={styles.itemColumn}>
                     <View style={styles.itemRow}>
                       <TouchableOpacity rounded style={styles.buttonAlign}>
-                        <Icon style={styles.iconAlign} name="windows" />
+                        <Icon style={styles.iconAlign} name="archive" />
                       </TouchableOpacity>
                     </View>
                     <View style={styles.itemRow}>
@@ -86,7 +83,7 @@ class TabHome extends Component { // eslint-disable-line
                   <View style={styles.itemColumn}>
                     <View style={styles.itemRow}>
                       <TouchableOpacity rounded style={styles.buttonAlign}>
-                        <Icon style={styles.iconAlign} name="microchip" />
+                        <Icon style={styles.iconAlign} name="memory" />
                       </TouchableOpacity>
                     </View>
                     <View style={styles.itemRow}>
@@ -100,7 +97,7 @@ class TabHome extends Component { // eslint-disable-line
                   <View style={styles.itemColumn}>
                     <View style={styles.itemRow}>
                       <TouchableOpacity rounded style={styles.buttonAlign}>
-                        <Icon style={styles.iconAlign} name="wifi" />
+                        <Icon style={styles.iconAlign} name="usb" />
                       </TouchableOpacity>
                     </View>
                     <View style={styles.itemRow}>
@@ -118,7 +115,7 @@ class TabHome extends Component { // eslint-disable-line
                   <View style={styles.itemColumn}>
                     <View style={styles.itemRow}>
                       <TouchableOpacity rounded style={styles.buttonAlign}>
-                        <Icon style={styles.iconAlign} name="refresh" />
+                        <Icon style={styles.iconAlign} name="sync" />
                       </TouchableOpacity>
                     </View>
                     <View style={styles.itemRow}>
@@ -132,7 +129,7 @@ class TabHome extends Component { // eslint-disable-line
                   <View style={styles.itemColumn}>
                     <View style={styles.itemRow}>
                       <TouchableOpacity rounded style={styles.buttonAlign}>
-                        <Icon style={styles.iconAlign} name="bug" />
+                        <Icon style={styles.iconAlign} name="bug-report" />
                       </TouchableOpacity>
                     </View>
                     <View style={styles.itemRow}>
@@ -147,7 +144,7 @@ class TabHome extends Component { // eslint-disable-line
                     <View style={styles.itemRow}>
 
                       <TouchableOpacity rounded style={styles.buttonAlign}>
-                        <Icon style={styles.iconAlign} large name="ellipsis-h" />
+                        <Icon style={styles.iconAlign} large name="more-horiz" />
                       </TouchableOpacity>
                     </View>
                     <View style={styles.itemRow}>

@@ -3,7 +3,7 @@ import {
   Text,
   View,
 } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome'
+import Icon from 'react-native-vector-icons/MaterialIcons'
 import styles from './Styles/TabIcon'
 import { Metrics, Colors } from '../Themes/'
 
@@ -14,7 +14,7 @@ class TabIcon extends Component {
     };
 
     const textStyles = {
-      color: this.props.selected ? Colors.colorTukangWhite : Colors.colorTukangYellow,
+      color: this.props.selected ?  Colors.colorTukangYellow : Colors.colorTukangWhite,
     };
 
     const iconColor = this.props.selected ? Colors.colorTukangYellow : '#ffffff';
