@@ -22,10 +22,25 @@ import ThemeScreen from '../Containers/ThemeScreen'
 import DeviceInfoScreen from '../Containers/DeviceInfoScreen'
 
 import TabHome from '../Containers/TabHome/'
+import InputHardware from '../Containers/InputHardware'
+import LokasiTukang from '../Containers/LokasiTukang'
+
 import TabMyServices from '../Containers/TabMyServices/'
+import OrderDetail from '../Containers/OrderDetail'
+import ProfileDetail from '../Containers/ProfileDetail'
+
 import TabProfileLogin from '../Containers/TabMyAccount/TabProfileLogin'
+import TabProfileNotLogin from '../Containers/TabMyAccount/TabProfileNotLogin';
+import PushNotification from '../Containers/PushNotification'
+import Newsletter from '../Containers/Newsletter'
+import EditProfile from '../Containers/EditProfile'
+
+import Daftar from '../Containers/Daftar'
+
+import LupaPassword from '../Containers/LupaPassword'
 
 import TabIcon from '../Navigation/TabIcon'
+
 
 /* **************************
 * Documentation: https://github.com/aksonov/react-native-router-flux
@@ -52,6 +67,32 @@ class NavigationRouter extends Component {
 
             {/* Custom navigation bar example */}
             <Scene key='deviceInfo' component={DeviceInfoScreen} title='Device Info' />
+            <Scene key="daftar" direction="vertical" >
+              <Scene
+                key="daftarModal"
+                navigationBarStyle={Styles.navBar}
+                component={Daftar}
+                title="Daftar"
+                titleStyle={Styles.title}
+                renderLeftButton={NavItems.hamburgerButton}
+                // renderRightButton={this.renderRightButton}
+                direction="vertical"
+                panHandlers={null}
+                duration={1}
+              />
+            </Scene>
+            <Scene key="lupaPassword" direction="vertical" >
+              <Scene
+                key="lupaPasswordModal"
+                navigationBarStyle={Styles.navBar}
+                component={LupaPassword}
+                title="Lupa Password"
+                titleStyle={Styles.title}
+                renderLeftButton={NavItems.hamburgerButton}
+                // renderRightButton={this.renderRightButton}
+                direction="vertical"
+              />
+            </Scene>
             <Scene
               key="tabBar"
               open={false}
@@ -77,6 +118,22 @@ class NavigationRouter extends Component {
                     titleStyle={Styles.title}
                     renderLeftButton={NavItems.hamburgerButton}
                   />
+                  <Scene
+                    key="inputHardware"
+                    component={InputHardware}
+                    title="Input Hardware"
+                    titleStyle={Styles.title}
+                    renderBackButton={NavItems.backButton}
+                    hideTabBar
+                  />
+                  <Scene
+                    key="lokasiTukang"
+                    component={LokasiTukang}
+                    title="Lokasi User"
+                    titleStyle={Styles.title}
+                    renderBackButton={NavItems.backButton}
+                    hideTabBar
+                  />
                 </Scene>
                 <Scene
                   key="tabMyServices"
@@ -91,8 +148,22 @@ class NavigationRouter extends Component {
                     title="My Services"
                     titleStyle={Styles.title}
                     renderLeftButton={NavItems.hamburgerButton}
-                    // renderLeftButton={this.renderMenuButton}
-                    // renderRightButton={this.renderRightButton}
+                  />
+                  <Scene
+                    key="orderDetail"
+                    component={OrderDetail}
+                    title="Order Detail"
+                    titleStyle={Styles.title}
+                    renderLeftButton={NavItems.hamburgerButton}
+                    hideTabBar
+                  />
+                  <Scene
+                    key="profileDetail"
+                    component={ProfileDetail}
+                    title="Profile Detail"
+                    titleStyle={Styles.title}
+                    renderLeftButton={NavItems.hamburgerButton}
+                    hideTabBar
                   />
                 </Scene>
                 <Scene
@@ -109,6 +180,38 @@ class NavigationRouter extends Component {
                     titleStyle={Styles.title}
                     renderLeftButton={NavItems.hamburgerButton}
                     // renderLeftButton={this.renderMenuButton}
+                    // renderRightButton={this.renderRightButton}
+                  />
+                  <Scene
+                    key="tabProfileNotLogin"
+                    component={TabProfileNotLogin}
+                    title="Logged In"
+                    titleStyle={Styles.title}
+                    renderLeftButton={NavItems.hamburgerButton}
+                    // renderRightButton={this.renderRightButton}
+                  />
+                  <Scene
+                    key="editProfile"
+                    component={EditProfile}
+                    title="Edit Profile"
+                    titleStyle={Styles.title}
+                    renderLeftButton={NavItems.hamburgerButton}
+                    // renderRightButton={this.renderRightButton}
+                  />
+                  <Scene
+                    key="newsletter"
+                    component={Newsletter}
+                    title="Newsletter"
+                    titleStyle={Styles.title}
+                    renderLeftButton={NavItems.hamburgerButton}
+                    // renderRightButton={this.renderRightButton}
+                  />
+                  <Scene
+                    key="pushNotification"
+                    component={PushNotification}
+                    title="Push Notification"
+                    titleStyle={Styles.title}
+                    renderLeftButton={NavItems.hamburgerButton}
                     // renderRightButton={this.renderRightButton}
                   />
                 </Scene>

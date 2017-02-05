@@ -1,11 +1,18 @@
-const React = require('react-native');
+// @flow
 
-const { StyleSheet, Dimensions, Platform } = React;
-// const deviceHeight = Dimensions.get('window').height;
+import { StyleSheet, Platform } from 'react-native'
+import { Colors, Metrics, ApplicationStyles } from '../../Themes/'
 
-module.exports = StyleSheet.create({
-  container: {
-    backgroundColor: '#333333',
+export default StyleSheet.create({
+  ...ApplicationStyles.screen,
+  groupContainer: {
+    ...ApplicationStyles.groupContainer
+  },
+  sectionHeaderContainer: {
+    ...ApplicationStyles.darkLabelContainer
+  },
+  sectionHeader: {
+    ...ApplicationStyles.darkLabel
   },
   mainColumn: {
     flex: 1,
@@ -14,7 +21,7 @@ module.exports = StyleSheet.create({
   mainRow: {
     // flex: 0.25,
     // paddingTop: 10,
-    paddingBottom: 10,
+    paddingBottom: Metrics.baseMargin,
   },
   innerColumn: {
     flex: 1,
@@ -25,8 +32,8 @@ module.exports = StyleSheet.create({
     flex: 0.3,
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 10,
-    marginBottom: 10,
+    marginTop: Metrics.baseMargin,
+    marginBottom: Metrics.baseMargin,
   },
   itemColumn: {
     flex: 1,
@@ -36,29 +43,33 @@ module.exports = StyleSheet.create({
   },
   buttonAlign: {
     alignSelf: 'center',
-    backgroundColor: '#F6C819',
-    width: 60,
-    height: 60,
+    justifyContent: 'center',
+    // backgroundColor: Colors.colorTukangYellow,
+    borderColor: Colors.colorTukangYellow,
+    borderWidth: 2,
+    width: 70,
+    height: 70,
     shadowRadius: 0,
     elevation: 0,
+    marginBottom: 5,
+    borderRadius: 35,
   },
   textAlign: {
     flex: 1,
     alignSelf: 'center',
-    fontSize: 12,
-    color: '#FFFFFF',
+    fontSize: 11,
+    color: Colors.colorTukangWhite,
   },
   iconAlign: {
     alignSelf: 'center',
-    color: '#333333',
-    fontSize: 30,
-    lineHeight: 30,
+    color: Colors.colorTukangYellow,
+    fontSize: 35,
   },
   alignButtonCenter: {
     alignItems: 'center',
   },
   iconMore: {
     alignSelf: 'center',
-    color: '#333333',
+    color: Colors.colorTukangBlack,
   },
-});
+})

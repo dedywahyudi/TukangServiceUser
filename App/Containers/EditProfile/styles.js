@@ -1,19 +1,9 @@
-// @flow
+const React = require('react-native');
 
-import { StyleSheet, Platform } from 'react-native'
-import { Colors, Metrics, ApplicationStyles } from '../../Themes/'
+const { StyleSheet, Dimensions, Platform } = React;
+// const deviceHeight = Dimensions.get('window').height;
 
-export default StyleSheet.create({
-  ...ApplicationStyles.screen,
-  groupContainer: {
-    ...ApplicationStyles.groupContainer
-  },
-  sectionHeaderContainer: {
-    ...ApplicationStyles.darkLabelContainer
-  },
-  sectionHeader: {
-    ...ApplicationStyles.darkLabel
-  },
+module.exports = StyleSheet.create({
   container: {
     backgroundColor: '#333333',
   },
@@ -65,7 +55,7 @@ export default StyleSheet.create({
   },
   loginListOr: {
     marginTop: 10,
-    marginBottom: 20,
+    marginBottom: 10,
   },
   loginInput: {
     marginTop: 10,
@@ -85,7 +75,7 @@ export default StyleSheet.create({
     fontSize: 12,
   },
   dataArrow: {
-    color: '#5A5A5A',
+    color: '#CECDD2',
     marginRight: 10,
   },
   iconMore: {
@@ -95,21 +85,12 @@ export default StyleSheet.create({
   noLeftMargin: {
     marginLeft: 0,
     paddingLeft: 18,
-    paddingRight: 18,
   },
   alignRight: {
     alignSelf: 'flex-end',
-  },
-  textWhite: {
-    color: '#ffffff',
-    fontSize: 16,
-    lineHeight: 16,
   },
   textBlack: {
     color: '#333333',
     fontSize: 16,
   },
-  textCenter: {
-    textAlign: 'center',
-  },
-})
+});

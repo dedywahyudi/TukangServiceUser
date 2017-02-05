@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { ScrollView, View, Text, TouchableOpacity } from 'react-native';
 import { Container, Tabs } from 'native-base';
 import TabOne from './TabOne';
 import TabTwo from './TabTwo';
@@ -11,14 +11,18 @@ class TabMyServices extends Component { // eslint-disable-line
 
   render() { // eslint-disable-line
     return (
-      <Container theme={theme} style={styles.container}>
-        <View style={styles.mainColumn}>
-          <Tabs locked>
-            <TabOne tabLabel="Active Services" />
-            <TabTwo tabLabel="Service History" />
-          </Tabs>
-        </View>
-      </Container>
+      <View style={styles.mainContainer}>
+        <ScrollView style={styles.container}>
+          <Container theme={theme} style={styles.container}>
+            <View style={styles.mainColumn}>
+              <Tabs locked>
+                <TabOne tabLabel="Active Services" />
+                <TabTwo tabLabel="Service History" />
+              </Tabs>
+            </View>
+          </Container>
+        </ScrollView>
+      </View>
     );
   }
 }
