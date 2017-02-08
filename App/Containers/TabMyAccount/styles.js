@@ -104,6 +104,7 @@ export default StyleSheet.create({
     color: '#ffffff',
     fontSize: 16,
     lineHeight: 16,
+    marginRight: 10,
   },
   textBlack: {
     color: '#333333',

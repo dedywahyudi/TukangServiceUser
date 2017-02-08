@@ -1,8 +1,9 @@
 
 import React, { Component } from 'react';
-import { Container, Button, Content, Icon, Text, List, ListItem, Input, InputGroup } from 'native-base';
+import { Container, Button, Content, Text, List, ListItem, Input, InputGroup, Icon } from 'native-base';
 import { Col, Row, Grid } from 'react-native-easy-grid';
 import { Actions } from 'react-native-router-flux';
+// import Icon from 'react-native-vector-icons/Ionicons';
 
 import styles from './styles';
 import theme from '../themes/base-theme';
@@ -18,7 +19,7 @@ export default class LupaPassword extends Component { // eslint-disable-line
             </ListItem>
             <ListItem style={[styles.noBorder, styles.noLeftMargin]}>
               <InputGroup style={styles.loginInput}>
-                <Icon name="ios-person" style={{ color: '#ddd', marginLeft: 5 }} />
+                <Icon name="person" style={{ color: '#ddd', marginLeft: 5 }} />
                 <Input placeholder="Email" />
               </InputGroup>
             </ListItem>

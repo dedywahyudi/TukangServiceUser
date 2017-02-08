@@ -23,13 +23,14 @@ export default StyleSheet.create({
   },
   sidebarIcon: {
     flex: 0,
-    fontSize: 21,
+    fontSize: 18,
     textAlign: 'center',
-    color: '#333333',
-    backgroundColor: '#FFCE00',
+    borderWidth: 1,
+    borderColor: '#FFCE00',
+    color: '#FFCE00',
     width: 37,
     height: 37,
-    lineHeight: 30,
+    lineHeight: 28,
     borderRadius: 18,
   },
   dataGrid: {
@@ -70,6 +71,7 @@ export default StyleSheet.create({
     color: '#A3A3A2',
   },
   dataArrow: {
+    flex: 0,
     color: '#5A5A5A',
     marginRight: 10,
   },
@@ -77,4 +79,4 @@ export default StyleSheet.create({
     marginLeft: 0,
     paddingLeft: 18,
   },
-})
+});

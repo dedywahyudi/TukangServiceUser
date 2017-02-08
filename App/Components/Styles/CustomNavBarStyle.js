@@ -14,7 +14,8 @@ export default {
     justifyContent: 'space-between'
   },
   leftButton: {
-    paddingTop: Metrics.baseMargin
+    paddingTop: Metrics.baseMargin,
+    paddingLeft: Metrics.baseMargin
   },
   logo: {
     height: Metrics.navBarHeight - Metrics.doubleBaseMargin,

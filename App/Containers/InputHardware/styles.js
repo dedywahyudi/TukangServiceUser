@@ -1,10 +1,19 @@
+// @flow
 
-const React = require('react-native');
+import { StyleSheet, Platform } from 'react-native'
+import { Colors, Metrics, ApplicationStyles } from '../../Themes/'
 
-const { StyleSheet, Dimensions, Platform } = React;
-// const deviceHeight = Dimensions.get('window').height;
-
-module.exports = StyleSheet.create({
+export default StyleSheet.create({
+  ...ApplicationStyles.screen,
+  groupContainer: {
+    ...ApplicationStyles.groupContainer
+  },
+  sectionHeaderContainer: {
+    ...ApplicationStyles.darkLabelContainer
+  },
+  sectionHeader: {
+    ...ApplicationStyles.darkLabel
+  },
   container: {
     backgroundColor: '#333333',
   },
@@ -56,4 +65,4 @@ module.exports = StyleSheet.create({
   textBlack: {
     color: '#333333'
   },
-});
+})

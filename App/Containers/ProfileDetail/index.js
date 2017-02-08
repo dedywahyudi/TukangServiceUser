@@ -39,7 +39,7 @@ class ProfileDetail extends Component {
               <Grid style={styles.tukangInfo}>
                 <Col>
                   <Button rounded primary style={styles.buttonAlign}>
-                    <Icon name="ios-call" style={styles.iconAlign} />
+                    <Icon name="call" style={styles.iconAlign} />
                   </Button>
                 </Col>
                 <Col>
@@ -49,7 +49,7 @@ class ProfileDetail extends Component {
                 </Col>
                 <Col>
                   <Button rounded primary style={styles.buttonAlign}>
-                    <Icon name="ios-text" style={styles.iconAlign} />
+                    <Icon name="textsms" style={styles.iconAlign} />
                   </Button>
                 </Col>
               </Grid>
@@ -67,10 +67,10 @@ class ProfileDetail extends Component {
             <ListItem style={[styles.noBorder, styles.skillList]}>
               <Grid style={styles.tukangInfo}>
                 <Row>
-                  <Icon name="ios-desktop-outline" style={styles.skillIcon} />
-                  <Icon name="ios-laptop-outline" style={styles.skillIcon} />
-                  <Icon name="ios-print-outline" style={styles.skillIcon} />
-                  <Icon name="ios-bug-outline" style={styles.skillIcon} />
+                  <Icon name="desktop-mac" style={styles.skillIcon} />
+                  <Icon name="laptop" style={styles.skillIcon} />
+                  <Icon name="print" style={styles.skillIcon} />
+                  <Icon name="bug-report" style={styles.skillIcon} />
                 </Row>
               </Grid>
             </ListItem>
@@ -96,116 +96,116 @@ class ProfileDetail extends Component {
               <Text>Daftar Service Terakhir:</Text>
             </ListItem>
             <ListItem style={styles.noLeftMargin} iconLeft iconRight onPress={Actions.orderDetail}>
-              <Icon name="ios-desktop-outline" style={styles.sidebarIcon} />
+              <Icon name="desktop-mac" style={styles.sidebarIcon} />
               <Grid style={styles.dataGrid}>
                 <Row><Text style={styles.rowTitle}>Order Service #1132123</Text></Row>
                 <Row><Text style={styles.statusGreen}>&#11044; In-progress</Text></Row>
               </Grid>
-              <Icon name="ios-arrow-forward" style={styles.dataArrow} />
+              <Icon name="chevron-right" style={styles.dataArrow} />
             </ListItem>
             <ListItem style={styles.noLeftMargin} iconLeft iconRight>
-              <Icon name="ios-laptop-outline" style={styles.sidebarIcon} />
+              <Icon name="laptop" style={styles.sidebarIcon} />
               <Grid style={styles.dataGrid}>
                 <Row><Text style={styles.rowTitle}>Order Service #1132123</Text></Row>
                 <Row><Text style={styles.statusRed}>&#11044; Telat dari Estimasi Selesai: 16 july 2016</Text></Row>
               </Grid>
-              <Icon name="ios-arrow-forward" style={styles.dataArrow} />
+              <Icon name="chevron-right" style={styles.dataArrow} />
             </ListItem>
             <ListItem style={styles.noLeftMargin} iconLeft iconRight>
-              <Icon name="ios-bug-outline" style={styles.sidebarIcon} />
+              <Icon name="bug-report" style={styles.sidebarIcon} />
               <Grid style={styles.dataGrid}>
                 <Row><Text style={styles.rowTitle}>Order Service #1132123</Text></Row>
                 <Row><Text style={styles.statusYellow}>&#11044; 1 Hari dari Estimasi Selesai: 16 july 2016</Text></Row>
               </Grid>
-              <Icon name="ios-arrow-forward" style={styles.dataArrow} />
+              <Icon name="chevron-right" style={styles.dataArrow} />
             </ListItem>
             <ListItem style={styles.noLeftMargin} iconLeft iconRight>
-              <Icon name="ios-folder-open-outline" style={styles.sidebarIcon} />
+              <Icon name="archive" style={styles.sidebarIcon} />
               <Grid style={styles.dataGrid}>
                 <Row><Text style={styles.rowTitle}>Order Service #1132123</Text></Row>
                 <Row><Text style={styles.statusYellow}>&#11044; In-progress</Text></Row>
               </Grid>
-              <Icon name="ios-arrow-forward" style={styles.dataArrow} />
+              <Icon name="chevron-right" style={styles.dataArrow} />
             </ListItem>
             <ListItem style={styles.noLeftMargin} iconLeft iconRight>
-              <Icon name="ios-construct-outline" style={styles.sidebarIcon} />
+              <Icon name="memory" style={styles.sidebarIcon} />
               <Grid style={styles.dataGrid}>
                 <Row><Text style={styles.rowTitle}>Order Service #1132123</Text></Row>
                 <Row><Text style={styles.statusRed}>&#11044; In-progress</Text></Row>
               </Grid>
-              <Icon name="ios-arrow-forward" style={styles.dataArrow} />
+              <Icon name="chevron-right" style={styles.dataArrow} />
             </ListItem>
             <ListItem style={styles.noLeftMargin} iconLeft iconRight>
-              <Icon name="ios-link-outline" style={styles.sidebarIcon} />
+              <Icon name="usb" style={styles.sidebarIcon} />
               <Grid style={styles.dataGrid}>
                 <Row><Text style={styles.rowTitle}>Order Service #1132123</Text></Row>
                 <Row><Text style={styles.statusBlue}>&#11044; In-progress</Text></Row>
               </Grid>
-              <Icon name="ios-arrow-forward" style={styles.dataArrow} />
+              <Icon name="chevron-right" style={styles.dataArrow} />
             </ListItem>
             <ListItem style={styles.noLeftMargin} iconLeft iconRight>
-              <Icon name="ios-sync-outline" style={styles.sidebarIcon} />
+              <Icon name="history" style={styles.sidebarIcon} />
               <Grid style={styles.dataGrid}>
                 <Row><Text style={styles.rowTitle}>Order Service #1132123</Text></Row>
                 <Row><Text style={styles.statusGreen}>&#11044; In-progress</Text></Row>
               </Grid>
-              <Icon name="ios-arrow-forward" style={styles.dataArrow} />
+              <Icon name="chevron-right" style={styles.dataArrow} />
             </ListItem>
             <ListItem style={styles.noLeftMargin} iconLeft iconRight>
-              <Icon name="ios-print-outline" style={styles.sidebarIcon} />
+              <Icon name="print" style={styles.sidebarIcon} />
               <Grid style={styles.dataGrid}>
                 <Row><Text style={styles.rowTitle}>Order Service #1132123</Text></Row>
                 <Row><Text style={styles.statusRed}>&#11044; In-progress</Text></Row>
               </Grid>
-              <Icon name="ios-arrow-forward" style={styles.dataArrow} />
+              <Icon name="chevron-right" style={styles.dataArrow} />
             </ListItem>
             <ListItem style={styles.noLeftMargin} iconLeft iconRight>
-              <Icon name="ios-link-outline" style={styles.sidebarIcon} />
+              <Icon name="usb" style={styles.sidebarIcon} />
               <Grid style={styles.dataGrid}>
                 <Row><Text style={styles.rowTitle}>Order Service #1132123</Text></Row>
                 <Row><Text style={styles.statusBlue}>&#11044; In-progress</Text></Row>
               </Grid>
-              <Icon name="ios-arrow-forward" style={styles.dataArrow} />
+              <Icon name="chevron-right" style={styles.dataArrow} />
             </ListItem>
             <ListItem style={styles.noLeftMargin} iconLeft iconRight>
-              <Icon name="ios-sync-outline" style={styles.sidebarIcon} />
+              <Icon name="history" style={styles.sidebarIcon} />
               <Grid style={styles.dataGrid}>
                 <Row><Text style={styles.rowTitle}>Order Service #1132123</Text></Row>
                 <Row><Text style={styles.statusGreen}>&#11044; In-progress</Text></Row>
               </Grid>
-              <Icon name="ios-arrow-forward" style={styles.dataArrow} />
+              <Icon name="chevron-right" style={styles.dataArrow} />
             </ListItem>
             <ListItem style={styles.noLeftMargin} iconLeft iconRight>
-              <Icon name="ios-print-outline" style={styles.sidebarIcon} />
+              <Icon name="print" style={styles.sidebarIcon} />
               <Grid style={styles.dataGrid}>
                 <Row><Text style={styles.rowTitle}>Order Service #1132123</Text></Row>
                 <Row><Text style={styles.statusRed}>&#11044; In-progress</Text></Row>
               </Grid>
-              <Icon name="ios-arrow-forward" style={styles.dataArrow} />
+              <Icon name="chevron-right" style={styles.dataArrow} />
             </ListItem>
             <ListItem style={styles.noLeftMargin} iconLeft iconRight>
-              <Icon name="ios-link-outline" style={styles.sidebarIcon} />
+              <Icon name="usb" style={styles.sidebarIcon} />
               <Grid style={styles.dataGrid}>
                 <Row><Text style={styles.rowTitle}>Order Service #1132123</Text></Row>
                 <Row><Text style={styles.statusBlue}>&#11044; In-progress</Text></Row>
               </Grid>
-              <Icon name="ios-arrow-forward" style={styles.dataArrow} />
+              <Icon name="chevron-right" style={styles.dataArrow} />
             </ListItem>
             <ListItem style={styles.noLeftMargin} iconLeft iconRight>
-              <Icon name="ios-sync-outline" style={styles.sidebarIcon} />
+              <Icon name="history" style={styles.sidebarIcon} />
               <Grid style={styles.dataGrid}>
                 <Row><Text style={styles.rowTitle}>Order Service #1132123</Text></Row>
                 <Row><Text style={styles.statusGreen}>&#11044; In-progress</Text></Row>
               </Grid>
-              <Icon name="ios-arrow-forward" style={styles.dataArrow} />
+              <Icon name="chevron-right" style={styles.dataArrow} />
             </ListItem>
             <ListItem style={styles.noLeftMargin} iconLeft iconRight>
-              <Icon name="ios-print-outline" style={styles.sidebarIcon} />
+              <Icon name="print" style={styles.sidebarIcon} />
               <Grid style={styles.dataGrid}>
                 <Row><Text style={styles.rowTitle}>Order Service #1132123</Text></Row>
                 <Row><Text style={styles.statusRed}>&#11044; In-progress</Text></Row>
               </Grid>
-              <Icon name="ios-arrow-forward" style={styles.dataArrow} />
+              <Icon name="chevron-right" style={styles.dataArrow} />
             </ListItem>
           </List>
         </Content>

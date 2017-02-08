@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { ScrollView, View, TouchableOpacity } from 'react-native';
-import { Container, Button, Content, Icon, Text, List, ListItem, Input, InputGroup } from 'native-base';
+import { Container, Button, Content, Text, List, ListItem, Input, InputGroup } from 'native-base';
 import { Col, Row, Grid } from 'react-native-easy-grid';
 import { Actions } from 'react-native-router-flux';
+import Icon from 'react-native-vector-icons/Ionicons';
 import theme from '../themes/base-theme';
 import styles from './styles';
 
@@ -31,13 +32,13 @@ export default class TabProfileLogin extends Component { // eslint-disable-line
                 </ListItem>
                 <ListItem style={[styles.noBorder, styles.noLeftMargin]}>
                   <InputGroup style={styles.loginInput}>
-                    <Icon name="ios-person" style={{ color: '#ddd', marginLeft: 5 }} />
+                    <Icon name="md-person" style={{ color: '#ddd', marginRight: 5 }} />
                     <Input placeholder="Email" />
                   </InputGroup>
                 </ListItem>
                 <ListItem style={[styles.noBorder, styles.noLeftMargin]}>
                   <InputGroup style={styles.loginInput}>
-                    <Icon name="ios-unlock" style={{ color: '#ddd', marginLeft: 5 }} />
+                    <Icon name="ios-unlock" style={{ color: '#ddd', marginRight: 5 }} />
                     <Input placeholder="Password" secureTextEntry />
                   </InputGroup>
                 </ListItem>
