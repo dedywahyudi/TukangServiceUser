@@ -1,21 +1,21 @@
 // @flow
 
-import { StyleSheet, Platform } from 'react-native'
-import { Colors, Metrics, ApplicationStyles } from '../../Themes/'
+import { StyleSheet } from 'react-native';
+import { Colors, ApplicationStyles } from '../../Themes/';
 
 export default StyleSheet.create({
   ...ApplicationStyles.screen,
   groupContainer: {
-    ...ApplicationStyles.groupContainer
+    ...ApplicationStyles.groupContainer,
   },
   sectionHeaderContainer: {
-    ...ApplicationStyles.darkLabelContainer
+    ...ApplicationStyles.darkLabelContainer,
   },
   sectionHeader: {
-    ...ApplicationStyles.darkLabel
+    ...ApplicationStyles.darkLabel,
   },
   container: {
-    backgroundColor: '#333333',
+    backgroundColor: Colors.colorTukangBlack,
   },
   mainColumn: {
     flex: 1,
@@ -26,14 +26,15 @@ export default StyleSheet.create({
     fontSize: 18,
     textAlign: 'center',
     borderWidth: 1,
-    borderColor: '#FFCE00',
-    color: '#FFCE00',
+    borderColor: Colors.colorTukangYellow,
+    color: Colors.colorTukangYellow,
     width: 37,
     height: 37,
     lineHeight: 28,
     borderRadius: 18,
   },
   dataGrid: {
+    flex: 0,
     paddingLeft: 10,
   },
   rowTitle: {
@@ -43,40 +44,44 @@ export default StyleSheet.create({
   rowNotes: {
     fontSize: 12,
     lineHeight: 18,
-    color: '#CECDD2',
+    color: Colors.colorTukangDivider,
   },
   statusYellow: {
     fontSize: 12,
     lineHeight: 18,
-    color: '#FFCE00',
+    color: Colors.colorTukangYellow,
   },
   statusRed: {
     fontSize: 12,
     lineHeight: 18,
-    color: '#DE2339',
+    color: Colors.colorTukangRed,
   },
   statusGreen: {
     fontSize: 12,
     lineHeight: 18,
-    color: '#5EAC02',
+    color: Colors.colorTukangGreen,
   },
   statusBlue: {
     fontSize: 12,
     lineHeight: 18,
-    color: '#00A0B4',
+    color: Colors.colorTukangBlue,
   },
   statusCompleted: {
     fontSize: 12,
     lineHeight: 18,
-    color: '#A3A3A2',
+    color: Colors.colorTukangDivider,
   },
   dataArrow: {
     flex: 0,
-    color: '#5A5A5A',
-    marginRight: 10,
+    color: Colors.colorTukangDivider,
+    fontSize: 32,
+    width: 30,
+    height: 30,
   },
   noLeftMargin: {
     marginLeft: 0,
-    paddingLeft: 18,
+    paddingLeft: 15,
+    paddingRight: 15,
+    flex: 1,
   },
 });

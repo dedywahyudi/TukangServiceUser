@@ -1,10 +1,11 @@
 import color from 'color';
 import { Platform } from 'react-native';
+import { Colors } from '../../Themes/';
 
 export default {
     // Badge
   badgeBg: '#ED1727',
-  badgeColor: '#fff',
+  badgeColor: Colors.colorTukangWhite,
 
     // Button
   btnFontFamily: (Platform.OS === 'ios') ? 'HelveticaNeue' : 'HelveticaNeue',
@@ -66,32 +67,32 @@ export default {
 
 
     // Card
-  cardDefaultBg: '#fff',
+  cardDefaultBg: Colors.colorTukangWhite,
 
 
   // Check Box
   checkboxBgColor: '#039BE5',
   checkboxSize: 23,
-  checkboxTickColor: '#fff',
+  checkboxTickColor: Colors.colorTukangWhite,
 
 
   // Color
   brandPrimary: '#5067FF',
-  brandInfo: '#00A0B4',
-  brandSuccess: '#5EAC02',
-  brandDanger: '#DE2339',
-  brandWarning: '#FF8D0D',
+  brandInfo: Colors.colorTukangBlue,
+  brandSuccess: Colors.colorTukangGreen,
+  brandDanger: Colors.colorTukangRed,
+  brandWarning: Colors.colorTukangOrange,
   brandSidebar: '#252932',
 
   // Color Tukang
-  colorTukangYellow: '#FFCE00',
-  colorTukangOrange: '#FF8D0D',
+  colorTukangYellow: Colors.colorTukangYellow,
+  colorTukangOrange: Colors.colorTukangOrange,
   colorTukangBlack: '#000000',
   colorTukangGrey: '#4b4b4b',
-  colorTukangWhite: '#FFFFFF',
-  colorTukangRed: '#DE2339',
-  colorTukangGreen: '#5EAC02',
-  colorTukangBlue: '#00A0B4',
+  colorTukangWhite: Colors.colorTukangWhite,
+  colorTukangRed: Colors.colorTukangRed,
+  colorTukangGreen: Colors.colorTukangGreen,
+  colorTukangBlue: Colors.colorTukangBlue,
 
 
   // Font
@@ -111,21 +112,21 @@ export default {
 
   // Footer
   footerHeight: 55,
-  footerDefaultBg: (Platform.OS === 'ios') ? '#FF8D0D' : '#FF8D0D',
+  footerDefaultBg: (Platform.OS === 'ios') ? Colors.colorTukangOrange : Colors.colorTukangOrange,
 
   // FooterTab
   tabBarTextColor: (Platform.OS === 'ios') ? '#ffc788' : '#ffc788',
-  tabBarActiveTextColor: (Platform.OS === 'ios') ? '#FFCE00' : '#FFFFFF',
+  tabBarActiveTextColor: (Platform.OS === 'ios') ? Colors.colorTukangYellow : Colors.colorTukangWhite,
   tabActiveBgColor: (Platform.OS === 'ios') ? undefined : undefined,
 
   // Header
-  iosToolbarBtnColor: '#fff',
-  toolbarDefaultBg: (Platform.OS === 'ios') ? '#FF8D0D' : '#FF8D0D',
+  iosToolbarBtnColor: Colors.colorTukangWhite,
+  toolbarDefaultBg: (Platform.OS === 'ios') ? Colors.colorTukangOrange : Colors.colorTukangOrange,
   toolbarHeight: (Platform.OS === 'ios') ? 64 : 56,
   toolbarIconSize: (Platform.OS === 'ios') ? 20 : 20,
-  toolbarInputColor: '#CECDD2',
+  toolbarInputColor: Colors.colorTukangDivider,
   toolbarInverseBg: '#222',
-  toolbarTextColor: (Platform.OS === 'ios') ? '#fff' : '#fff',
+  toolbarTextColor: (Platform.OS === 'ios') ? Colors.colorTukangWhite : Colors.colorTukangWhite,
   get statusBarColor() {
     return color(this.toolbarDefaultBg).darken(0.1).hexString();
   },
@@ -144,7 +145,7 @@ export default {
   inputErrorBorderColor: '#ed2f2f',
 
   get inputColor() {
-    return this.textColor;
+    return '#575757';
   },
   get inputColorPlaceholder() {
     return '#575757';
@@ -169,11 +170,11 @@ export default {
 
 
   // List
-  listBorderColor: '#A3A3A2',
-  listDividerBg: '#A3A3A2',
+  listBorderColor: Colors.colorTukangDivider,
+  listDividerBg: Colors.colorTukangDivider,
   listItemHeight: 45,
-  listItemPadding: 9,
-  listNoteColor: '#808080',
+  listItemPadding: 15,
+  listNoteColor: Colors.colorTukangDivider,
   listNoteSize: 13,
 
 
@@ -199,15 +200,15 @@ export default {
   // Tabs
   // tabBgColor: '#F8F8F8',
   // tabFontSize: 15,
-  // tabTextColor: '#fff',
+  // tabTextColor: Colors.colorTukangWhite,
   tabBgColor: (Platform.OS === 'ios') ? '#4b4b4b' : '#4b4b4b',
   tabFontSize: 16,
-  tabTextColor: (Platform.OS === 'ios') ? '#fff' : '#fff',
+  tabTextColor: (Platform.OS === 'ios') ? Colors.colorTukangWhite : Colors.colorTukangWhite,
 
 
   // Text
-  textColor: '#ffffff',
-  inverseTextColor: '#ffffff',
+  textColor: Colors.colorTukangWhite,
+  inverseTextColor: Colors.colorTukangWhite,
 
 
   // Title

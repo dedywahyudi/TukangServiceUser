@@ -1,80 +1,19 @@
+// @flow
 
-const React = require('react-native');
+import { StyleSheet, Platform } from 'react-native';
+import { Colors, ApplicationStyles } from '../../Themes/';
 
-const { StyleSheet, Dimensions, Platform } = React;
-// const deviceHeight = Dimensions.get('window').height;
-
-module.exports = StyleSheet.create({
-  container: {
-    backgroundColor: '#333333',
+export default StyleSheet.create({
+  ...ApplicationStyles.screen,
+  groupContainer: {
+    ...ApplicationStyles.groupContainer,
   },
-  // mainColumn: {
-  //   flex: 1,
-  //   flexDirection: 'column',
-  // },
-  // mainRow: {
-  //   // flex: 0.25,
-  //   // paddingTop: 10,
-  //   paddingBottom: 10,
-  // },
-  // innerColumn: {
-  //   flex: 1,
-  //   flexDirection: 'row',
-  // },
-  // innerRow: {
-  //   flexDirection: 'row',
-  //   flex: 0.3,
-  //   justifyContent: 'center',
-  //   alignItems: 'center',
-  // },
-  // itemColumn: {
-  //   flex: 1,
-  // },
-  // itemRow: {
-  //   marginTop: (Platform.OS === 'ios') ? 4 : 0,
-  // },
-  // buttonAlign: {
-  //   alignSelf: 'center',
-  //   backgroundColor: '#fff',
-  //   width: 60,
-  //   height: 60,
-  // },
-  // buttonMore: {
-  //   alignSelf: 'center',
-  //   backgroundColor: '#FF8D0D',
-  //   width: 60,
-  //   height: 60,
-  // },
-  // textAlign: {
-  //   flex: 1,
-  //   alignSelf: 'center',
-  //   fontSize: 12,
-  // },
-  // iconAlign: {
-  //   alignSelf: 'center',
-  //   color: '#FF8D0D',
-  //   fontSize: 30,
-  //   lineHeight: 30,
-  // },
-  // iconMore: {
-  //   alignSelf: 'center',
-  //   color: '#FFF',
-  // },
-  // fabStyle: {
-  //   backgroundColor: '#5EAC02',
-  // },
-  // logo: {
-  //   position: 'absolute',
-  //   left: (Platform.OS === 'android') ? 40 : 50,
-  //   top: (Platform.OS === 'android') ? 35 : 60,
-  //   width: 280,
-  //   height: 100,
-  // },
-  // iconLogo: {
-  //   backgroundColor: '#5EAC02',
-  //   width: 103,
-  //   height: 38,
-  // },
+  sectionHeaderContainer: {
+    ...ApplicationStyles.darkLabelContainer,
+  },
+  sectionHeader: {
+    ...ApplicationStyles.darkLabel,
+  },
   dataGrid: {
     paddingLeft: 10,
   },
@@ -88,53 +27,53 @@ module.exports = StyleSheet.create({
   },
   rowNotes: {
     fontSize: 12,
-    color: '#CECDD2',
+    color: Colors.colorTukangDivider,
   },
   statusYellow: {
     fontSize: 12,
     lineHeight: 18,
-    color: '#FF8D0D',
+    color: Colors.colorTukangOrange,
   },
   statusRed: {
     fontSize: 12,
     lineHeight: 18,
-    color: '#DE2339',
+    color: Colors.colorTukangRed,
   },
   statusGreen: {
     fontSize: 12,
     lineHeight: 18,
-    color: '#5EAC02',
+    color: Colors.colorTukangGreen,
   },
   statusBlue: {
     fontSize: 12,
     lineHeight: 18,
-    color: '#00A0B4',
+    color: Colors.colorTukangBlue,
   },
   listYellow: {
     paddingLeft: 0,
-    backgroundColor: '#FF8D0D',
+    backgroundColor: Colors.colorTukangOrange,
   },
   listRed: {
     paddingLeft: 0,
-    backgroundColor: '#DE2339',
+    backgroundColor: Colors.colorTukangRed,
   },
   listGreen: {
     paddingLeft: 0,
     marginLeft: 0,
-    backgroundColor: '#5EAC02',
+    backgroundColor: Colors.colorTukangGreen,
   },
   listBlue: {
     paddingLeft: 0,
-    backgroundColor: '#00A0B4',
+    backgroundColor: Colors.colorTukangBlue,
   },
   listText: {
     paddingLeft: 10,
     fontSize: 14,
-    color: '#ffffff',
+    color: Colors.colorTukangWhite,
   },
   statusCompleted: {
     fontSize: 12,
-    color: '#CECDD2',
+    color: Colors.colorTukangDivider,
   },
   skillList: {
     flexDirection: 'row',
@@ -150,8 +89,8 @@ module.exports = StyleSheet.create({
   sidebarIcon: {
     fontSize: 21,
     alignSelf: 'center',
-    color: '#fff',
-    backgroundColor: '#FF8D0D',
+    color: Colors.colorTukangWhite,
+    backgroundColor: Colors.colorTukangOrange,
     width: 37,
     height: 37,
     borderRadius: 18,
@@ -160,8 +99,8 @@ module.exports = StyleSheet.create({
   },
   skillIcon: {
     fontSize: 21,
-    color: '#fff',
-    backgroundColor: '#FF8D0D',
+    color: Colors.colorTukangWhite,
+    backgroundColor: Colors.colorTukangOrange,
     width: 37,
     height: 37,
     borderRadius: 18,
@@ -170,16 +109,16 @@ module.exports = StyleSheet.create({
     paddingTop: (Platform.OS === 'android') ? 8 : 5,
   },
   // dataArrow: {
-  //   color: '#CECDD2',
+  //   color: Colors.colorTukangDivider,
   // },
   // btnFb: {
-  //   backgroundColor: '#3B579D',
+  //   backgroundColor: Colors.colorFb,
   // },
   // btnEmail: {
-  //   backgroundColor: '#FF8D0D',
+  //   backgroundColor: Colors.colorTukangOrange,
   // },
   // btnGoogle: {
-  //   backgroundColor: '#DD5044',
+  //   backgroundColor: Colors.colorGoogle,
   // },
   noBorder: {
     borderBottomWidth: 0,
@@ -192,11 +131,11 @@ module.exports = StyleSheet.create({
     marginTop: 10,
     marginBottom: 10,
     borderBottomWidth: 0,
-    backgroundColor: '#fff',
+    backgroundColor: Colors.colorTukangWhite,
     borderRadius: 5,
     height: 100,
     borderWidth: 1,
-    borderColor: '#ddd',
+    borderColor: Colors.colorTukangDivider,
     textAlignVertical: 'top',
   },
   loginListOr: {
@@ -207,9 +146,9 @@ module.exports = StyleSheet.create({
     marginTop: 10,
     marginBottom: 10,
     borderBottomWidth: 0,
-    backgroundColor: '#fff',
+    backgroundColor: Colors.colorTukangWhite,
     borderRadius: 5,
-    borderColor: '#ddd',
+    borderColor: Colors.colorTukangDivider,
   },
   loginTextDaftar: {
     textAlign: 'left',
@@ -222,22 +161,19 @@ module.exports = StyleSheet.create({
   rowUser: {
     fontSize: 18,
     lineHeight: 20,
-    color: '#fff',
+    color: Colors.colorTukangWhite,
   },
   rowUserLogin: {
     fontSize: 12,
     lineHeight: 14,
-    color: '#fff',
+    color: Colors.colorTukangWhite,
   },
   headerLogin: {
-    backgroundColor: '#474745',
+    backgroundColor: Colors.colorTukangGrey,
     paddingTop: 0,
     paddingBottom: 10,
   },
   btnEditProfile: {
-    backgroundColor: '#fff',
-  },
-  rowRating: {
-    height: 27,
+    backgroundColor: Colors.colorTukangWhite,
   },
 });

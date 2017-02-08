@@ -1,11 +1,21 @@
-const React = require('react-native');
+// @flow
 
-const { StyleSheet, Dimensions, Platform } = React;
-// const deviceHeight = Dimensions.get('window').height;
+import { StyleSheet, Platform } from 'react-native';
+import { Colors, ApplicationStyles } from '../../Themes/';
 
-module.exports = StyleSheet.create({
+export default StyleSheet.create({
+  ...ApplicationStyles.screen,
+  groupContainer: {
+    ...ApplicationStyles.groupContainer,
+  },
+  sectionHeaderContainer: {
+    ...ApplicationStyles.darkLabelContainer,
+  },
+  sectionHeader: {
+    ...ApplicationStyles.darkLabel,
+  },
   container: {
-    backgroundColor: '#333333',
+    backgroundColor: Colors.colorTukangBlack,
     flex: 1,
   },
   dataGrid: {
@@ -21,54 +31,54 @@ module.exports = StyleSheet.create({
   },
   rowNotes: {
     fontSize: 12,
-    color: '#CECDD2',
+    color: Colors.colorTukangDivider,
   },
   statusYellow: {
     fontSize: 12,
     lineHeight: 18,
-    color: '#FF8D0D',
+    color: Colors.colorTukangOrange,
   },
   statusRed: {
     fontSize: 12,
     lineHeight: 18,
-    color: '#DE2339',
+    color: Colors.colorTukangRed,
   },
   statusGreen: {
     fontSize: 12,
     lineHeight: 18,
-    color: '#5EAC02',
+    color: Colors.colorTukangGreen,
   },
   statusBlue: {
     fontSize: 12,
     lineHeight: 18,
-    color: '#00A0B4',
+    color: Colors.colorTukangBlue,
   },
   listYellow: {
     paddingLeft: 0,
-    backgroundColor: '#FF8D0D',
+    backgroundColor: Colors.colorTukangOrange,
   },
   listRed: {
     paddingLeft: 0,
-    backgroundColor: '#DE2339',
+    backgroundColor: Colors.colorTukangRed,
   },
   listGreen: {
     paddingLeft: 0,
     marginLeft: 0,
-    backgroundColor: '#5EAC02',
+    backgroundColor: Colors.colorTukangGreen,
   },
   listBlue: {
     paddingLeft: 0,
-    backgroundColor: '#00A0B4',
+    backgroundColor: Colors.colorTukangBlue,
   },
   listText: {
     paddingLeft: 10,
     fontSize: 14,
     lineHeight: 16,
-    color: '#ffffff',
+    color: Colors.colorTukangWhite,
   },
   statusCompleted: {
     fontSize: 12,
-    color: '#CECDD2',
+    color: Colors.colorTukangDivider,
   },
   ratingAlign: {
     borderBottomWidth: 0,
@@ -79,8 +89,8 @@ module.exports = StyleSheet.create({
   sidebarIcon: {
     fontSize: 21,
     alignSelf: 'center',
-    color: '#fff',
-    backgroundColor: '#FF8D0D',
+    color: Colors.colorTukangWhite,
+    backgroundColor: Colors.colorTukangOrange,
     width: 37,
     height: 37,
     borderRadius: 18,
@@ -92,17 +102,19 @@ module.exports = StyleSheet.create({
   },
   buttonAlign: {
     alignSelf: 'center',
-    backgroundColor: '#F6C819',
-    width: 60,
-    height: 60,
+    borderWidth: 2,
+    borderColor: Colors.colorTukangYellow,
+    backgroundColor: 'transparent',
+    width: 70,
+    height: 70,
     shadowRadius: 0,
     elevation: 0,
   },
   iconAlign: {
     alignSelf: 'center',
-    color: '#333333',
-    fontSize: 40,
-    lineHeight: 40,
+    color: Colors.colorTukangYellow,
+    fontSize: 35,
+    lineHeight: 35,
   },
   textCenter: {
     flex: 1,
@@ -120,14 +132,14 @@ module.exports = StyleSheet.create({
     textAlign: 'center',
     fontSize: 12,
     lineHeight: 20,
-    color: '#CECDD2',
+    color: Colors.colorTukangDivider,
   },
   skillIcon: {
     alignSelf: 'center',
     fontSize: 21,
     textAlign: 'center',
-    color: '#ffffff',
-    backgroundColor: '#FFCE00',
+    color: Colors.colorTukangWhite,
+    backgroundColor: Colors.colorTukangYellow,
     width: 37,
     height: 37,
     lineHeight: 30,
@@ -149,7 +161,7 @@ module.exports = StyleSheet.create({
     marginTop: 10,
     marginBottom: 10,
     borderBottomWidth: 0,
-    backgroundColor: '#fff',
+    backgroundColor: Colors.colorTukangWhite,
     borderRadius: 5,
     borderColor: 'transparent',
   },
@@ -164,20 +176,20 @@ module.exports = StyleSheet.create({
   rowUser: {
     fontSize: 18,
     lineHeight: 20,
-    color: '#fff',
+    color: Colors.colorTukangWhite,
   },
   rowUserLogin: {
     fontSize: 12,
     lineHeight: 14,
-    color: '#fff',
+    color: Colors.colorTukangWhite,
   },
   headerLogin: {
-    backgroundColor: '#474745',
+    backgroundColor: Colors.colorTukangGrey,
     paddingTop: 0,
     paddingBottom: 10,
   },
   btnEditProfile: {
-    backgroundColor: '#fff',
+    backgroundColor: Colors.colorTukangWhite,
   },
   tukangInfo: {
     marginTop: 10,

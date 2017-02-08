@@ -1,18 +1,18 @@
 // @flow
 
-import { StyleSheet, Platform } from 'react-native'
-import { Colors, Metrics, ApplicationStyles } from '../../Themes/'
+import { StyleSheet, Platform } from 'react-native';
+import { Colors, Metrics, ApplicationStyles } from '../../Themes/';
 
 export default StyleSheet.create({
   ...ApplicationStyles.screen,
   groupContainer: {
-    ...ApplicationStyles.groupContainer
+    ...ApplicationStyles.groupContainer,
   },
   sectionHeaderContainer: {
-    ...ApplicationStyles.darkLabelContainer
+    ...ApplicationStyles.darkLabelContainer,
   },
   sectionHeader: {
-    ...ApplicationStyles.darkLabel
+    ...ApplicationStyles.darkLabel,
   },
   mainColumn: {
     flex: 1,
@@ -72,4 +72,4 @@ export default StyleSheet.create({
     alignSelf: 'center',
     color: Colors.colorTukangBlack,
   },
-})
+});

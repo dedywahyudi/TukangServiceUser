@@ -6,6 +6,6 @@ import { ApplicationStyles } from '../../Themes/'
 export default StyleSheet.create({
   ...ApplicationStyles.screen,
   groupContainer: {
-    ...ApplicationStyles.groupContainer
+    ...ApplicationStyles.groupContainer,
   }
 })

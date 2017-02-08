@@ -6,13 +6,13 @@ import { Colors, Metrics, ApplicationStyles } from '../../Themes/'
 export default StyleSheet.create({
   ...ApplicationStyles.screen,
   groupContainer: {
-    ...ApplicationStyles.groupContainer
+    ...ApplicationStyles.groupContainer,
   },
   sectionHeaderContainer: {
-    ...ApplicationStyles.darkLabelContainer
+    ...ApplicationStyles.darkLabelContainer,
   },
   sectionHeader: {
-    ...ApplicationStyles.darkLabel
+    ...ApplicationStyles.darkLabel,
   },
   colorsContainer: {
     flexDirection: 'row',

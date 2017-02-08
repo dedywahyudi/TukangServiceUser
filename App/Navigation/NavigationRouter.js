@@ -1,45 +1,45 @@
 // @flow
 
-import React, { Component } from 'react'
-import { Scene, Router } from 'react-native-router-flux'
-import Styles from './Styles/NavigationContainerStyle'
-import NavigationDrawer from './NavigationDrawer'
-import NavItems from './NavItems'
-import CustomNavBar from '../Navigation/CustomNavBar'
+import React, { Component } from 'react';
+import { Scene, Router } from 'react-native-router-flux';
+import Styles from './Styles/NavigationContainerStyle';
+import NavigationDrawer from './NavigationDrawer';
+import NavItems from './NavItems';
+import CustomNavBar from '../Navigation/CustomNavBar';
 
 // screens identified by the router
-import PresentationScreen from '../Containers/PresentationScreen'
-import AllComponentsScreen from '../Containers/AllComponentsScreen'
-import UsageExamplesScreen from '../Containers/UsageExamplesScreen'
-import LoginScreen from '../Containers/LoginScreen'
-import ListviewExample from '../Containers/ListviewExample'
-import ListviewGridExample from '../Containers/ListviewGridExample'
-import ListviewSectionsExample from '../Containers/ListviewSectionsExample'
-import ListviewSearchingExample from '../Containers/ListviewSearchingExample'
-import MapviewExample from '../Containers/MapviewExample'
-import APITestingScreen from '../Containers/APITestingScreen'
-import ThemeScreen from '../Containers/ThemeScreen'
-import DeviceInfoScreen from '../Containers/DeviceInfoScreen'
+import PresentationScreen from '../Containers/PresentationScreen';
+import AllComponentsScreen from '../Containers/AllComponentsScreen';
+import UsageExamplesScreen from '../Containers/UsageExamplesScreen';
+import LoginScreen from '../Containers/LoginScreen';
+import ListviewExample from '../Containers/ListviewExample';
+import ListviewGridExample from '../Containers/ListviewGridExample';
+import ListviewSectionsExample from '../Containers/ListviewSectionsExample';
+import ListviewSearchingExample from '../Containers/ListviewSearchingExample';
+import MapviewExample from '../Containers/MapviewExample';
+import APITestingScreen from '../Containers/APITestingScreen';
+import ThemeScreen from '../Containers/ThemeScreen';
+import DeviceInfoScreen from '../Containers/DeviceInfoScreen';
 
-import TabHome from '../Containers/TabHome/'
-import InputHardware from '../Containers/InputHardware'
-import LokasiTukang from '../Containers/LokasiTukang'
+import TabHome from '../Containers/TabHome/';
+import InputHardware from '../Containers/InputHardware';
+import LokasiTukang from '../Containers/LokasiTukang';
 
-import TabMyServices from '../Containers/TabMyServices/'
-import OrderDetail from '../Containers/OrderDetail'
-import ProfileDetail from '../Containers/ProfileDetail'
+import TabMyServices from '../Containers/TabMyServices/';
+import OrderDetail from '../Containers/OrderDetail';
+import ProfileDetail from '../Containers/ProfileDetail';
 
-import TabProfileLogin from '../Containers/TabMyAccount/TabProfileLogin'
+import TabProfileLogin from '../Containers/TabMyAccount/TabProfileLogin';
 import TabProfileNotLogin from '../Containers/TabMyAccount/TabProfileNotLogin';
-import PushNotification from '../Containers/PushNotification'
-import Newsletter from '../Containers/Newsletter'
-import EditProfile from '../Containers/EditProfile'
+import PushNotification from '../Containers/PushNotification';
+import Newsletter from '../Containers/Newsletter';
+import EditProfile from '../Containers/EditProfile';
 
-import Daftar from '../Containers/Daftar'
+import Daftar from '../Containers/Daftar';
 
-import LupaPassword from '../Containers/LupaPassword'
+import LupaPassword from '../Containers/LupaPassword';
 
-import TabIcon from '../Navigation/TabIcon'
+import TabIcon from '../Navigation/TabIcon';
 
 
 /* **************************
@@ -48,25 +48,25 @@ import TabIcon from '../Navigation/TabIcon'
 
 class NavigationRouter extends Component {
 
-  render () {
+  render() {
     return (
       <Router>
-        <Scene key='drawer' component={NavigationDrawer} open={false}>
-          <Scene key='drawerChildrenWrapper' navigationBarStyle={Styles.navBar} titleStyle={Styles.title} leftButtonIconStyle={Styles.leftButton} rightButtonTextStyle={Styles.rightButton}>
-            <Scene key='presentationScreen' component={PresentationScreen} title='Ignite' renderLeftButton={NavItems.hamburgerButton} />
-            <Scene key='componentExamples' component={AllComponentsScreen} title='Components' />
-            <Scene key='usageExamples' component={UsageExamplesScreen} title='Usage' rightTitle='Example' onRight={() => window.alert('Example Pressed')} />
-            <Scene key='login' component={LoginScreen} title='Login' hideNavBar />
-            <Scene key='listviewExample' component={ListviewExample} title='Listview Example' />
-            <Scene key='listviewGridExample' component={ListviewGridExample} title='Listview Grid' />
-            <Scene key='listviewSectionsExample' component={ListviewSectionsExample} title='Listview Sections' />
-            <Scene key='listviewSearchingExample' component={ListviewSearchingExample} title='Listview Searching' navBar={CustomNavBar} />
-            <Scene key='mapviewExample' component={MapviewExample} title='Mapview Example' />
-            <Scene key='apiTesting' component={APITestingScreen} title='API Testing' />
-            <Scene key='theme' component={ThemeScreen} title='Theme' />
+        <Scene key="drawer" component={NavigationDrawer} open={false}>
+          <Scene key="drawerChildrenWrapper" navigationBarStyle={Styles.navBar} titleStyle={Styles.title} leftButtonIconStyle={Styles.leftButton} rightButtonTextStyle={Styles.rightButton}>
+            <Scene key="presentationScreen" component={PresentationScreen} title="Ignite" renderLeftButton={NavItems.hamburgerButton} />
+            <Scene key="componentExamples" component={AllComponentsScreen} title="Components" />
+            <Scene key="usageExamples" component={UsageExamplesScreen} title="Usage" rightTitle="Example" onRight={() => window.alert("Example Pressed")} />
+            <Scene key="login" component={LoginScreen} title="Login" hideNavBar />
+            <Scene key="listviewExample" component={ListviewExample} title="Listview Example" />
+            <Scene key="listviewGridExample" component={ListviewGridExample} title="Listview Grid" />
+            <Scene key="listviewSectionsExample" component={ListviewSectionsExample} title="Listview Sections" />
+            <Scene key="listviewSearchingExample" component={ListviewSearchingExample} title="Listview Searching" navBar={CustomNavBar} />
+            <Scene key="mapviewExample" component={MapviewExample} title="Mapview Example" />
+            <Scene key="apiTesting" component={APITestingScreen} title="API Testing" />
+            <Scene key="theme" component={ThemeScreen} title="Theme" />
 
             {/* Custom navigation bar example */}
-            <Scene key='deviceInfo' component={DeviceInfoScreen} title='Device Info' />
+            <Scene key="deviceInfo" component={DeviceInfoScreen} title="Device Info" />
             <Scene key="daftar" direction="vertical" >
               <Scene
                 key="daftarModal"
@@ -74,7 +74,7 @@ class NavigationRouter extends Component {
                 component={Daftar}
                 title="Daftar"
                 titleStyle={Styles.title}
-                renderLeftButton={NavItems.hamburgerButton}
+                renderBackButton={NavItems.backButton}
                 // renderRightButton={this.renderRightButton}
                 direction="vertical"
                 panHandlers={null}
@@ -88,7 +88,7 @@ class NavigationRouter extends Component {
                 component={LupaPassword}
                 title="Lupa Password"
                 titleStyle={Styles.title}
-                renderLeftButton={NavItems.hamburgerButton}
+                renderBackButton={NavItems.backButton}
                 // renderRightButton={this.renderRightButton}
                 direction="vertical"
               />
@@ -154,7 +154,7 @@ class NavigationRouter extends Component {
                     component={OrderDetail}
                     title="Order Detail"
                     titleStyle={Styles.title}
-                    renderLeftButton={NavItems.hamburgerButton}
+                    renderBackButton={NavItems.backButton}
                     hideTabBar
                   />
                   <Scene
@@ -162,7 +162,7 @@ class NavigationRouter extends Component {
                     component={ProfileDetail}
                     title="Profile Detail"
                     titleStyle={Styles.title}
-                    renderLeftButton={NavItems.hamburgerButton}
+                    renderBackButton={NavItems.backButton}
                     hideTabBar
                   />
                 </Scene>
@@ -187,7 +187,7 @@ class NavigationRouter extends Component {
                     component={TabProfileNotLogin}
                     title="Logged In"
                     titleStyle={Styles.title}
-                    renderLeftButton={NavItems.hamburgerButton}
+                    renderBackButton={NavItems.backButton}
                     // renderRightButton={this.renderRightButton}
                   />
                   <Scene
@@ -195,7 +195,7 @@ class NavigationRouter extends Component {
                     component={EditProfile}
                     title="Edit Profile"
                     titleStyle={Styles.title}
-                    renderLeftButton={NavItems.hamburgerButton}
+                    renderBackButton={NavItems.backButton}
                     // renderRightButton={this.renderRightButton}
                   />
                   <Scene
@@ -203,7 +203,7 @@ class NavigationRouter extends Component {
                     component={Newsletter}
                     title="Newsletter"
                     titleStyle={Styles.title}
-                    renderLeftButton={NavItems.hamburgerButton}
+                    renderBackButton={NavItems.backButton}
                     // renderRightButton={this.renderRightButton}
                   />
                   <Scene
@@ -211,7 +211,7 @@ class NavigationRouter extends Component {
                     component={PushNotification}
                     title="Push Notification"
                     titleStyle={Styles.title}
-                    renderLeftButton={NavItems.hamburgerButton}
+                    renderBackButton={NavItems.backButton}
                     // renderRightButton={this.renderRightButton}
                   />
                 </Scene>
@@ -220,7 +220,7 @@ class NavigationRouter extends Component {
           </Scene>
         </Scene>
       </Router>
-    )
+    );
   }
 }
 

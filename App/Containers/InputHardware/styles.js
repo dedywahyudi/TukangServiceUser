@@ -1,38 +1,38 @@
 // @flow
 
-import { StyleSheet, Platform } from 'react-native'
-import { Colors, Metrics, ApplicationStyles } from '../../Themes/'
+import { StyleSheet } from 'react-native';
+import { Colors, ApplicationStyles } from '../../Themes/';
 
 export default StyleSheet.create({
   ...ApplicationStyles.screen,
   groupContainer: {
-    ...ApplicationStyles.groupContainer
+    ...ApplicationStyles.groupContainer,
   },
   sectionHeaderContainer: {
-    ...ApplicationStyles.darkLabelContainer
+    ...ApplicationStyles.darkLabelContainer,
   },
   sectionHeader: {
-    ...ApplicationStyles.darkLabel
+    ...ApplicationStyles.darkLabel,
   },
   container: {
-    backgroundColor: '#333333',
+    backgroundColor: Colors.colorTukangBlack,
   },
   textInput: {
     marginTop: 10,
     marginBottom: 10,
     borderBottomWidth: 0,
-    backgroundColor: '#fff',
+    backgroundColor: Colors.colorTukangWhite,
     borderRadius: 5,
-    borderColor: '#ddd',
+    borderColor: Colors.colorTukangDivider,
     borderWidth: 1,
   },
   multiline: {
     marginTop: 10,
     marginBottom: 10,
     borderBottomWidth: 0,
-    backgroundColor: '#fff',
+    backgroundColor: Colors.colorTukangWhite,
     borderRadius: 5,
-    borderColor: '#ddd',
+    borderColor: Colors.colorTukangDivider,
     borderWidth: 1,
     height: 100,
     paddingLeft: 10,
@@ -41,7 +41,7 @@ export default StyleSheet.create({
     textAlignVertical: 'top',
   },
   btnDark: {
-    backgroundColor: '#FFCE00',
+    backgroundColor: Colors.colorTukangYellow,
     elevation: 0,
     height: 50,
   },
@@ -54,15 +54,19 @@ export default StyleSheet.create({
     marginTop: 10,
     marginBottom: 10,
     borderBottomWidth: 0,
-    backgroundColor: '#fff',
+    backgroundColor: Colors.colorTukangWhite,
     borderRadius: 5,
-    borderColor: '#ddd',
+    borderColor: Colors.colorTukangDivider,
     borderWidth: 1,
   },
   noBorder: {
     borderBottomWidth: 0,
   },
   textBlack: {
-    color: '#333333'
+    color: Colors.colorTukangBlack,
   },
-})
+  textWhite: {
+    color: Colors.colorTukangWhite,
+    fontWeight: 'bold',
+  },
+});

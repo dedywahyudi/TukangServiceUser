@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { ScrollView, View, Text, TouchableOpacity, TextInput } from 'react-native';
-import { Container, Button, Icon, List, ListItem, InputGroup, Input } from 'native-base';
+import { ScrollView, View, Text, TextInput } from 'react-native';
+import { Container, Content, Button, Icon, List, ListItem, InputGroup, Input } from 'native-base';
 // import { Col, Row, Grid } from 'react-native-easy-grid';
 // import StarRating from 'react-native-star-rating';
 import { Actions } from 'react-native-router-flux';
@@ -14,11 +14,11 @@ export default class InputHardware extends Component { // eslint-disable-line
     return (
       <View style={styles.mainContainer}>
         <ScrollView style={styles.container}>
-          <Container>
-            <View>
+          <Container theme={myTheme} style={styles.container}>
+            <Content>
               <List>
                 <ListItem itemDivider>
-                  <Text>Merk/Type Hardware:</Text>
+                  <Text style={styles.textWhite}>Merk/Type Hardware:</Text>
                 </ListItem>
                 <ListItem style={[styles.noBorder, styles.noLeftMargin]}>
                   <InputGroup style={styles.textInput}>
@@ -26,7 +26,7 @@ export default class InputHardware extends Component { // eslint-disable-line
                   </InputGroup>
                 </ListItem>
                 <ListItem itemDivider>
-                  <Text>Deskripsi Permasalahan:</Text>
+                  <Text style={styles.textWhite}>Deskripsi Permasalahan:</Text>
                 </ListItem>
                 <ListItem style={[styles.noBorder, styles.noLeftMargin]}>
                   <TextInput
@@ -38,11 +38,11 @@ export default class InputHardware extends Component { // eslint-disable-line
                 </ListItem>
                 <ListItem style={[styles.noBorder, styles.noLeftMargin]}>
                   <Button block style={styles.btnDark} onPress={Actions.lokasiTukang}>
-                    <Text style={styles.textBlack} >PILIH LOKASI ANDA</Text>
+                    <Text style={styles.textBlack}>PILIH LOKASI ANDA</Text>
                   </Button>
                 </ListItem>
               </List>
-            </View>
+            </Content>
           </Container>
         </ScrollView>
       </View>

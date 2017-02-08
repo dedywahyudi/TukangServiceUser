@@ -1,15 +1,14 @@
 
 import React, { Component } from 'react';
 import { Switch } from 'react-native';
-import { Container, Content, Icon, Text, List, ListItem, Button } from 'native-base';
-import { Col, Row, Grid } from 'react-native-easy-grid';
-import { Actions } from 'react-native-router-flux';
+import { Container, Content, Text, List, ListItem, Button } from 'native-base';
+import { Col, Grid } from 'react-native-easy-grid';
 
 import styles from './styles';
 import theme from '../themes/base-theme';
 
 export default class EditProfile extends Component { // eslint-disable-line
-  constructor(props){
+  constructor(props) {
     super(props);
 
     this.state = {
@@ -20,7 +19,7 @@ export default class EditProfile extends Component { // eslint-disable-line
     };
   }
 
-  render (){
+  render() {
     return (
       <Container theme={theme} style={styles.container}>
         <Content>
@@ -37,7 +36,7 @@ export default class EditProfile extends Component { // eslint-disable-line
                 </Col>
                 <Col>
                   <Switch
-                    onValueChange={(value) => this.setState({switchEmail: value})}
+                    onValueChange={(value) => this.setState({ switchEmail: value })}
                     value={this.state.switchEmail}
                   />
                 </Col>
@@ -100,7 +99,7 @@ export default class EditProfile extends Component { // eslint-disable-line
                 </Col>
                 <Col>
                   <Switch
-                    onValueChange={(value) => this.setState({switchEmail: value})}
+                    onValueChange={(value) => this.setState({ switchEmail: value })}
                     value={this.state.switchEmail}
                   />
                 </Col>

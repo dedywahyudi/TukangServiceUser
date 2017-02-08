@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-
-import { Container, Content, List, Icon, ListItem, Text, Thumbnail, View, Badge } from 'native-base';
+import { Container, Content, List, Icon, ListItem, Text } from 'native-base';
 import { Col, Row, Grid } from 'react-native-easy-grid';
+import { Actions } from 'react-native-router-flux';
 
 import styles from './styles';
 

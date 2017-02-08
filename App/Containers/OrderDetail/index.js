@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Content, Button, Icon, List, ListItem, Text, Thumbnail, View } from 'native-base';
+import { Container, Content, Button, Icon, List, ListItem, Text, Thumbnail } from 'native-base';
 import { TouchableOpacity } from 'react-native';
 import { Col, Row, Grid } from 'react-native-easy-grid';
 import StarRating from 'react-native-star-rating';
@@ -82,7 +82,7 @@ class OrderDetail extends Component {
             <ListItem style={styles.noBorder} >
               <Text>
                 <Text style={styles.rowNotes}>
-                  Tanggal Selesai: 29 November 2016 {"\n"}
+                  Tanggal Selesai: 29 November 2016 {'\n'}
                 </Text>
                 <Text style={styles.rowTitle}>
                   Setelah dihidupkan PC tidak bereaksi apa-apa, tidak ada tampilan di monitor, tidak ada lampu indikator (led) yang menyala, kipas power supply tidak berputar, lampu indikator pada monitor tidak menyala.
@@ -92,7 +92,7 @@ class OrderDetail extends Component {
             <ListItem style={styles.noBorder} >
               <Text>
                 <Text style={styles.rowNotes}>
-                  Tanggal Selesai: 29 November 2016 {"\n"}
+                  Tanggal Selesai: 29 November 2016 {'\n'}
                 </Text>
                 <Text style={styles.rowTitle}>
                   Setelah dihidupkan PC tidak bereaksi apa-apa, tidak ada tampilan di monitor, tidak ada lampu indikator (led) yang menyala, kipas power supply tidak berputar, lampu indikator pada monitor tidak menyala.
@@ -102,21 +102,21 @@ class OrderDetail extends Component {
             <ListItem itemDivider>
               <Text>Rating Pengguna</Text>
             </ListItem>
-            <ListItem style={styles.noBorder} onPress={() => this.replaceAt('orderdetail')}>
+            <ListItem style={styles.noBorder} >
               <Grid>
                 <Col>
                   <Row>
                     <StarRating
                       disabled={true}
-                      emptyStar={'ios-star-outline'}
-                      fullStar={'ios-star'}
-                      halfStar={'ios-star-half'}
+                      emptyStar={'md-star-outline'}
+                      fullStar={'md-star'}
+                      halfStar={'md-star-half'}
                       iconSet={'Ionicons'}
                       maxStars={5}
                       rating={this.state.starCount}
                       selectedStar={(rating) => this.onStarRatingPress(rating)}
-                      starColor={'#F6C819'}
-                      starSize={30}
+                      starColor={Colors.colorTukangYellow}
+                      starSize={40}
                     />
                   </Row>
                 </Col>
@@ -125,7 +125,7 @@ class OrderDetail extends Component {
             <ListItem style={styles.noBorder}>
               <Text>
                 <Text style={styles.rowNotes}>
-                  Martha Hidayat | 20 Agustus 2016{"\n"}
+                  Martha Hidayat | 20 Agustus 2016{'\n'}
                 </Text>
                 <Text style={styles.rowTitle}>
                   “Service Bintang 5. Hasil kerjanya rapi,

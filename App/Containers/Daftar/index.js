@@ -10,7 +10,7 @@ import styles from './styles';
 import theme from '../themes/base-theme';
 
 export default class Daftar extends Component { // eslint-disable-line
-  render (){
+  render() {
     return (
       <View style={styles.mainContainer}>
         <ScrollView style={styles.container}>
@@ -19,14 +19,14 @@ export default class Daftar extends Component { // eslint-disable-line
               <List>
                 <ListItem style={[styles.noBorder, styles.noLeftMargin]}>
                   <Button block style={styles.btnFb}>
-                    <Icon name="logo-facebook" style={styles.textWhite} />
-                    <Text style={styles.textWhite}>Daftar melalui Facebook</Text>
+                    <Icon name="logo-facebook" style={styles.logoFb} />
+                    <Text style={styles.textWhite}>  Daftar melalui Facebook</Text>
                   </Button>
                 </ListItem>
                 <ListItem style={[styles.noBorder, styles.noLeftMargin]}>
                   <Button block style={styles.btnGoogle}>
-                    <Icon name="logo-googleplus" style={styles.textWhite} />
-                    <Text>Daftar melalui Google+</Text>
+                    <Icon name="logo-googleplus" style={styles.logoFb}  />
+                    <Text>  Daftar melalui Google+</Text>
                   </Button>
                 </ListItem>
                 <ListItem style={[styles.loginListOr, styles.noLeftMargin]}>
@@ -34,13 +34,11 @@ export default class Daftar extends Component { // eslint-disable-line
                 </ListItem>
                 <ListItem style={[styles.noBorder, styles.noLeftMargin]}>
                   <InputGroup style={styles.loginInput}>
-                    <Icon name="md-person" style={{ color: '#ddd', marginLeft: 5 }} />
                     <Input placeholder="Email" />
                   </InputGroup>
                 </ListItem>
                 <ListItem style={[styles.noBorder, styles.noLeftMargin]}>
                   <InputGroup style={styles.loginInput}>
-                    <Icon name="ios-unlock" style={{ color: '#ddd', marginLeft: 5 }} />
                     <Input placeholder="Password" secureTextEntry />
                   </InputGroup>
                 </ListItem>

@@ -1,43 +1,47 @@
 // @flow
 
-import { StyleSheet, Platform } from 'react-native'
-import { Colors, Metrics, ApplicationStyles } from '../../Themes/'
+import { StyleSheet } from 'react-native';
+import { Colors, ApplicationStyles } from '../../Themes/';
 
 export default StyleSheet.create({
   ...ApplicationStyles.screen,
   groupContainer: {
-    ...ApplicationStyles.groupContainer
+    ...ApplicationStyles.groupContainer,
   },
   sectionHeaderContainer: {
-    ...ApplicationStyles.darkLabelContainer
+    ...ApplicationStyles.darkLabelContainer,
   },
   sectionHeader: {
-    ...ApplicationStyles.darkLabel
+    ...ApplicationStyles.darkLabel,
   },
   container: {
-    backgroundColor: '#333333',
+    backgroundColor: Colors.colorTukangBlack,
   },
   headerLogin: {
-    backgroundColor: '#474745',
+    backgroundColor: Colors.colorTukangGrey,
     paddingTop: 0,
     paddingBottom: 10,
   },
+  logoFb: {
+    paddingRight: 20,
+    fontSize: 18,
+  },
   btnFb: {
-    backgroundColor: '#3B579D',
+    backgroundColor: Colors.colorFb,
     elevation: 0,
     paddingTop: 10,
     paddingBottom: 10,
     height: 50,
   },
   btnEmail: {
-    backgroundColor: '#F6C819',
+    backgroundColor: Colors.colorTukangYellow,
     elevation: 0,
     paddingTop: 10,
     paddingBottom: 10,
     height: 50,
   },
   btnGoogle: {
-    backgroundColor: '#DD5044',
+    backgroundColor: Colors.colorGoogle,
     elevation: 0,
     paddingTop: 10,
     paddingBottom: 10,
@@ -49,15 +53,15 @@ export default StyleSheet.create({
   rowUser: {
     fontSize: 18,
     lineHeight: 20,
-    color: '#fff',
+    color: Colors.colorTukangWhite,
   },
   rowUserLogin: {
     fontSize: 12,
     lineHeight: 14,
-    color: '#fff',
+    color: Colors.colorTukangWhite,
   },
   btnEditProfile: {
-    backgroundColor: '#fff',
+    backgroundColor: Colors.colorTukangWhite,
   },
   loginTextOr: {
     textAlign: 'center',
@@ -71,9 +75,9 @@ export default StyleSheet.create({
     marginTop: 10,
     marginBottom: 10,
     borderBottomWidth: 0,
-    backgroundColor: '#fff',
+    backgroundColor: Colors.colorTukangWhite,
     borderRadius: 5,
-    borderColor: '#ddd',
+    borderColor: Colors.colorTukangDivider,
     borderWidth: 1,
   },
   loginTextDaftar: {
@@ -85,12 +89,12 @@ export default StyleSheet.create({
     fontSize: 12,
   },
   dataArrow: {
-    color: '#5A5A5A',
+    color: Colors.colorTukangDivider,
     marginRight: 10,
   },
   iconMore: {
     alignSelf: 'center',
-    color: '#FFF',
+    color: Colors.colorTukangWhite,
   },
   noLeftMargin: {
     marginLeft: 0,
@@ -101,15 +105,15 @@ export default StyleSheet.create({
     alignSelf: 'flex-end',
   },
   textWhite: {
-    color: '#ffffff',
+    color: Colors.colorTukangWhite,
     fontSize: 16,
     lineHeight: 16,
   },
   textBlack: {
-    color: '#333333',
+    color: Colors.colorTukangBlack,
     fontSize: 16,
   },
   textCenter: {
     textAlign: 'center',
   },
-})
+});

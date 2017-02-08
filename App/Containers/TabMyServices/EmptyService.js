@@ -18,7 +18,7 @@ class EmptyService extends Component { // eslint-disable-line
             <Icon name="ios-warning" style={styles.sidebarIcon} />
             <Text style={styles.textEmpty}>Anda belum memiliki History Service.</Text>
             <Button block style={styles.btnEmail}>
-              <Text style={{ color: '#ffffff' }}>CARI TUKANG SERVICE</Text>
+              <Text style={{ color: Colors.colorTukangWhite }}>CARI TUKANG SERVICE</Text>
             </Button>
           </View>
         </Content>

@@ -10,7 +10,7 @@ import theme from '../themes/base-theme';
 
 export default class PushNotification extends Component { // eslint-disable-line
 
-  constructor(props){
+  constructor(props) {
     super(props);
 
     this.state = {
@@ -20,7 +20,7 @@ export default class PushNotification extends Component { // eslint-disable-line
     };
   }
 
-  render (){
+  render() {
     return (
       <Container theme={theme} style={styles.container}>
         <Content>

@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import { ScrollView, View, Text, TouchableOpacity } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import { Container, Tabs } from 'native-base';
 import TabOne from './TabOne';
 import TabTwo from './TabTwo';

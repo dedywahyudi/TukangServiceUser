@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ScrollView, View, TouchableOpacity } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import { Container, Button, Content, Text, List, ListItem, Input, InputGroup } from 'native-base';
 import { Col, Row, Grid } from 'react-native-easy-grid';
 import { Actions } from 'react-native-router-flux';
@@ -8,7 +8,7 @@ import theme from '../themes/base-theme';
 import styles from './styles';
 
 export default class TabProfileLogin extends Component { // eslint-disable-line
-  render (){
+  render() {
     return (
       <View style={styles.mainContainer}>
         <ScrollView style={styles.container}>
@@ -17,14 +17,14 @@ export default class TabProfileLogin extends Component { // eslint-disable-line
               <List>
                 <ListItem style={[styles.noBorder, styles.noLeftMargin]}>
                   <Button block style={styles.btnFb}>
-                    <Icon name="logo-facebook" style={styles.textWhite} />
-                    <Text style={styles.textWhite}>Masuk melalui Facebook</Text>
+                    <Icon name="logo-facebook" style={styles.logoFb} />
+                    <Text style={styles.textWhite}>  Masuk melalui Facebook</Text>
                   </Button>
                 </ListItem>
                 <ListItem style={[styles.noBorder, styles.noLeftMargin]}>
                   <Button block style={styles.btnGoogle}>
-                    <Icon name="logo-googleplus" style={styles.textWhite} />
-                    <Text style={styles.textWhite}>Masuk melalui Google+</Text>
+                    <Icon name="logo-googleplus" style={styles.logoFb} />
+                    <Text style={styles.textWhite}>  Masuk melalui Google+</Text>
                   </Button>
                 </ListItem>
                 <ListItem style={[styles.loginListOr, styles.noLeftMargin]}>
@@ -32,13 +32,13 @@ export default class TabProfileLogin extends Component { // eslint-disable-line
                 </ListItem>
                 <ListItem style={[styles.noBorder, styles.noLeftMargin]}>
                   <InputGroup style={styles.loginInput}>
-                    <Icon name="md-person" style={{ color: '#ddd', marginRight: 5 }} />
+                    {/* <Icon name="md-person" style={{ color: Colors.colorTukangDivider }} /> */}
                     <Input placeholder="Email" />
                   </InputGroup>
                 </ListItem>
                 <ListItem style={[styles.noBorder, styles.noLeftMargin]}>
                   <InputGroup style={styles.loginInput}>
-                    <Icon name="ios-unlock" style={{ color: '#ddd', marginRight: 5 }} />
+                    {/* <Icon name="md-lock" style={{ color: Colors.colorTukangDivider }} /> */}
                     <Input placeholder="Password" secureTextEntry />
                   </InputGroup>
                 </ListItem>

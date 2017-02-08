@@ -19,10 +19,10 @@ export default StyleSheet.create({
     color: Colors.silver
   },
   componentLabelContainer: {
-    ...ApplicationStyles.darkLabelContainer
+    ...ApplicationStyles.darkLabelContainer,
   },
   componentLabel: {
-    ...ApplicationStyles.darkLabel
+    ...ApplicationStyles.darkLabel,
   },
   temperature: {
     ...Fonts.style.h4,
@@ -33,6 +33,6 @@ export default StyleSheet.create({
     color: Colors.snow
   },
   groupContainer: {
-    ...ApplicationStyles.groupContainer
+    ...ApplicationStyles.groupContainer,
   }
 })

@@ -109,7 +109,7 @@ export default class extends Component {
           activeDot={
             <View
               style={{
-                backgroundColor: '#fff',
+                backgroundColor: Colors.colorTukangWhite,
                 width: 6,
                 height: 6,
                 borderRadius: 4,
@@ -157,7 +157,7 @@ export default class extends Component {
           activeDot={
           <View
           style={{
-          backgroundColor: '#fff',
+          backgroundColor: Colors.colorTukangWhite,
           width: 6,
           height: 6,
           borderRadius: 4,

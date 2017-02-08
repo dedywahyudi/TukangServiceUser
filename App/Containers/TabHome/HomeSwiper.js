@@ -7,6 +7,7 @@ import {
   Dimensions,
 } from 'react-native';
 import Swiper from 'react-native-swiper';
+import { Colors } from '../../Themes/';
 
 const { width } = Dimensions.get('window');
 
@@ -109,7 +110,7 @@ export default class extends Component {
           activeDot={
             <View
               style={{
-                backgroundColor: '#fff',
+                backgroundColor: Colors.colorTukangWhite,
                 width: 6,
                 height: 6,
                 borderRadius: 4,
@@ -135,55 +136,6 @@ export default class extends Component {
               />)
           }
         </Swiper>
-        {/* <Swiper
-          style={styles.wrapper}
-          height={150}
-          horizontal={true}
-          autoplay
-          dot={
-          <View
-          style={{
-          backgroundColor: 'rgba(0,0,0,.1)',
-          width: 6,
-          height: 6,
-          borderRadius: 4,
-          marginLeft: 3,
-          marginRight: 3,
-          marginTop: 3,
-          marginBottom: 3
-          }}
-          />
-          }
-          activeDot={
-          <View
-          style={{
-          backgroundColor: '#fff',
-          width: 6,
-          height: 6,
-          borderRadius: 4,
-          marginLeft: 3,
-          marginRight: 3,
-          marginTop: 3,
-          marginBottom: 3
-          }}
-          />
-          }
-          paginationStyle={{
-          bottom: 5,
-          }}
-          >
-          {
-          this.state.imgList.map((item, i) =>
-          <Slide
-          loadHandle={this.loadHandle}
-          loaded={!!this.state.loadQueue[i]}
-          uri={item}
-          i={i}
-          key={i}
-          />
-          )
-          }
-        </Swiper> */}
       </View>
     );
   }

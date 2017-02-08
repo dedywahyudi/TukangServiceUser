@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { ScrollView, View, Text, TouchableOpacity } from 'react-native';
 import { Actions } from 'react-native-router-flux';
-import Icon from 'react-native-vector-icons/MaterialIcons'
+import Icon from 'react-native-vector-icons/MaterialIcons';
 import HomeSwiper from './HomeSwiper';
 import styles from './styles';
 // import theme from '../themes/base-theme';

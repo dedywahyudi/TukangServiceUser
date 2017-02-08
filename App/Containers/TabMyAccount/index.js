@@ -7,7 +7,7 @@ import TabProfileNotLogin from './TabProfileNotLogin';
 import styles from './styles';
 
 export default class TabProfile extends Component { // eslint-disable-line
-  render(){
+  render() {
     return (
       <TabProfileNotLogin />
     );

@@ -68,7 +68,7 @@ class ReviewScreen extends Component {
                       maxStars={5}
                       rating={this.state.starCount}
                       selectedStar={(rating) => this.onStarRatingPress(rating)}
-                      starColor={'#FF8D0D'}
+                      starColor={Colors.colorTukangOrange}
                       starSize={30}
                     />
                   </Row>
@@ -85,7 +85,7 @@ class ReviewScreen extends Component {
             </ListItem>
             <ListItem style={styles.noBorder}>
               <Button block  warning>
-                <Icon name="ios-send" style={{ color: '#ffffff' }} />
+                <Icon name="ios-send" style={{ color: Colors.colorTukangWhite }} />
                 <Text>Kirim Ulasan Anda</Text>
               </Button>
             </ListItem>

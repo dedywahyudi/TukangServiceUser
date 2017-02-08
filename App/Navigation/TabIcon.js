@@ -17,7 +17,7 @@ class TabIcon extends Component {
       color: this.props.selected ?  Colors.colorTukangYellow : Colors.colorTukangWhite,
     };
 
-    const iconColor = this.props.selected ? Colors.colorTukangYellow : '#ffffff';
+    const iconColor = this.props.selected ? Colors.colorTukangYellow : Colors.colorTukangWhite;
 
     return (
       <View style={[styles.container, containerStyles]}>
