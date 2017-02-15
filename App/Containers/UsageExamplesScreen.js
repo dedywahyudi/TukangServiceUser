@@ -105,6 +105,11 @@ class UsageExamplesScreen extends React.Component {
             {I18n.t('loginWithFacebook')}
           </Icon.Button>
         </View>
+        <View style={styles.groupContainer}>
+          <Icon.Button name='google' style={styles.facebookButton} backgroundColor={Colors.facebook} onPress={() => window.alert('Facebook')}>
+            {I18n.t('loginWithFacebook')}
+          </Icon.Button>
+        </View>
         {this.renderHeader(I18n.t('rnAnimatable'))}
         <View style={styles.groupContainer}>
           <Animatable.Text animation='fadeIn' iterationCount='infinite' direction='alternate' style={styles.subtitle}>{I18n.t('rnAnimatable')}</Animatable.Text>

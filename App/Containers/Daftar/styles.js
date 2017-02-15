@@ -24,7 +24,7 @@ export default StyleSheet.create({
   },
   logoFb: {
     paddingRight: 20,
-    fontSize: 18,
+    fontSize: 16,
   },
   btnFb: {
     backgroundColor: Colors.colorFb,

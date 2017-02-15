@@ -29,6 +29,7 @@ const colors = {
   colorTukangOrange: '#FF8D0D',
   colorTukangTabInactive: '#555555',
   colorTukangGrey: '#474745',
+  colorTukangGreyLight: '#A3A3A2',
   colorTukangDivider: '#5A5A5A',
   colorTukangWhite: '#FFFFFF',
   colorFb: '#3B579D',

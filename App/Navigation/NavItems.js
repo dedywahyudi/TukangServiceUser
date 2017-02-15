@@ -39,7 +39,7 @@ export default {
     )
   },
 
-  searchButton (callback: Function) {
+  searchButton (callback: Function) { // eslint-disable-line
     return (
       <TouchableOpacity onPress={callback}>
         <Icon name='search'

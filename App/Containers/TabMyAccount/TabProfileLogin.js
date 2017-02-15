@@ -3,7 +3,7 @@ import { ScrollView, View } from 'react-native';
 import { Container, Button, Content, Text, List, ListItem, Input, InputGroup } from 'native-base';
 import { Col, Row, Grid } from 'react-native-easy-grid';
 import { Actions } from 'react-native-router-flux';
-import Icon from 'react-native-vector-icons/Ionicons';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import theme from '../themes/base-theme';
 import styles from './styles';
 
@@ -17,13 +17,13 @@ export default class TabProfileLogin extends Component { // eslint-disable-line
               <List>
                 <ListItem style={[styles.noBorder, styles.noLeftMargin]}>
                   <Button block style={styles.btnFb}>
-                    <Icon name="logo-facebook" style={styles.logoFb} />
+                    <Icon name="facebook" style={styles.logoFb} />
                     <Text style={styles.textWhite}>  Masuk melalui Facebook</Text>
                   </Button>
                 </ListItem>
                 <ListItem style={[styles.noBorder, styles.noLeftMargin]}>
                   <Button block style={styles.btnGoogle}>
-                    <Icon name="logo-googleplus" style={styles.logoFb} />
+                    <Icon name="google" style={styles.logoFb} />
                     <Text style={styles.textWhite}>  Masuk melalui Google+</Text>
                   </Button>
                 </ListItem>

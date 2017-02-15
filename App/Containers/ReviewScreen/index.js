@@ -6,7 +6,7 @@ import { Container, Header, Title, Content, Button, Icon, List, ListItem, Text, 
 import { Col, Row, Grid } from 'react-native-easy-grid';
 import StarRating from 'react-native-star-rating';
 
-import myTheme from '../../themes/base-theme';
+import myTheme from '../themes/base-theme';
 import styles from './styles';
 
 const {

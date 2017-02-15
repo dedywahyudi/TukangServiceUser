@@ -133,7 +133,7 @@ export default StyleSheet.create({
     textAlign: 'center',
     fontSize: 12,
     lineHeight: 20,
-    color: Colors.colorTukangDivider,
+    color: Colors.colorTukangGreyLight,
   },
   skillIcon: {
     alignSelf: 'center',

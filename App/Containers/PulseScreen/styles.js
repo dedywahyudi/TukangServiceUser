@@ -1,6 +1,6 @@
 // @flow
 
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
 import { Colors, ApplicationStyles } from '../../Themes/';
 
 export default StyleSheet.create({
@@ -18,25 +18,7 @@ export default StyleSheet.create({
     ...StyleSheet.absoluteFillObject,
     justifyContent: 'flex-end',
     alignItems: 'center',
-  },
-  map: {
-    ...StyleSheet.absoluteFillObject,
-  },
-  bubble: {
-    backgroundColor: Colors.colorTukangRed,
-    paddingHorizontal: 18,
-    paddingVertical: 12,
-    borderRadius: 20,
-  },
-  latlng: {
-    width: 200,
-    alignItems: 'stretch',
-  },
-  button: {
-    width: 80,
-    paddingHorizontal: 12,
-    alignItems: 'center',
-    marginHorizontal: 10,
+    backgroundColor: Colors.colorTukangBlack,
   },
   buttonContainer: {
     flexDirection: 'row',

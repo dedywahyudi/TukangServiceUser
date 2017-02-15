@@ -24,7 +24,7 @@ export default StyleSheet.create({
   },
   logoFb: {
     paddingRight: 20,
-    fontSize: 18,
+    fontSize: 16,
   },
   btnFb: {
     backgroundColor: Colors.colorFb,
@@ -106,8 +106,7 @@ export default StyleSheet.create({
   textWhite: {
     color: Colors.colorTukangWhite,
     fontSize: 16,
-    lineHeight: 16,
-    marginRight: 10,
+    lineHeight: 20,
   },
   textBlack: {
     color: Colors.colorTukangBlack,
@@ -116,4 +115,4 @@ export default StyleSheet.create({
   textCenter: {
     textAlign: 'center',
   },
-})
+});

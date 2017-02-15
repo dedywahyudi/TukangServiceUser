@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { ScrollView, View, Text, TextInput } from 'react-native';
-import { Container, Content, Button, Icon, List, ListItem, InputGroup, Input } from 'native-base';
+import { Container, Content, Button, List, ListItem, InputGroup, Input } from 'native-base';
 // import { Col, Row, Grid } from 'react-native-easy-grid';
 // import StarRating from 'react-native-star-rating';
 import { Actions } from 'react-native-router-flux';

@@ -69,7 +69,7 @@ export default StyleSheet.create({
   statusCompleted: {
     fontSize: 12,
     lineHeight: 18,
-    color: Colors.colorTukangDivider,
+    color: Colors.colorTukangGreyLight,
   },
   dataArrow: {
     flex: 0,

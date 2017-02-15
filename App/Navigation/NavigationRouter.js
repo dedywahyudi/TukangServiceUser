@@ -24,6 +24,9 @@ import DeviceInfoScreen from '../Containers/DeviceInfoScreen';
 import TabHome from '../Containers/TabHome/';
 import InputHardware from '../Containers/InputHardware';
 import LokasiTukang from '../Containers/LokasiTukang';
+import PulseScreen from '../Containers/PulseScreen';
+import MapRoute from '../Containers/MapRoute';
+import OnLocation from '../Containers/OnLocation';
 
 import TabMyServices from '../Containers/TabMyServices/';
 import OrderDetail from '../Containers/OrderDetail';
@@ -134,6 +137,30 @@ class NavigationRouter extends Component {
                     renderBackButton={NavItems.backButton}
                     hideTabBar
                   />
+                  <Scene
+                    key="pulseScreen"
+                    component={PulseScreen}
+                    title="Cari Tukang Terdekat"
+                    titleStyle={Styles.title}
+                    renderBackButton={NavItems.backButton}
+                    hideTabBar
+                  />
+                  <Scene
+                    key="mapRoute"
+                    component={MapRoute}
+                    title="Map Route"
+                    titleStyle={Styles.title}
+                    renderBackButton={NavItems.backButton}
+                    hideTabBar
+                  />
+                  <Scene
+                    key="onLocation"
+                    component={OnLocation}
+                    title="Tukang On Location"
+                    titleStyle={Styles.title}
+                    renderBackButton={NavItems.backButton}
+                    hideTabBar
+                  />
                 </Scene>
                 <Scene
                   key="tabMyServices"
@@ -224,4 +251,4 @@ class NavigationRouter extends Component {
   }
 }
 
-export default NavigationRouter
+export default NavigationRouter;

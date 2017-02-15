@@ -12,7 +12,7 @@ import { Colors } from '../../Themes/';
 
 const sankhadeep = require('../../../img/contacts/sankhadeep.png');
 
-class OrderDetail extends Component {
+class PulseScreen extends Component {
 
   constructor(props) {
     super(props);
@@ -142,4 +142,4 @@ class OrderDetail extends Component {
   }
 }
 
-export default OrderDetail;
+export default PulseScreen;

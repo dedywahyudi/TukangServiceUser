@@ -22,7 +22,7 @@ function randomColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 
-class DefaultMarkers extends React.Component {
+class MapRoute extends React.Component {
   constructor(props) {
     super(props);
 
@@ -68,25 +68,8 @@ class DefaultMarkers extends React.Component {
           ))}
         </MapView>
         <View style={styles.buttonContainer}>
-          {/* <TouchableOpacity
-            onPress={() => this.setState({ markers: [] })}
-            style={styles.bubble}
-            >
-            <Text>CARI TUKANG SERVICE</Text>
-          </TouchableOpacity> */}
-          <Button block style={styles.btnDark} onPress={Actions.lupa}>
-            <Text style={styles.textBlack}>PILIH LOKASI ANDA</Text>
-          </Button>
-        </View>
-        <View style={styles.buttonContainer}>
-          {/* <TouchableOpacity
-            onPress={() => this.setState({ markers: [] })}
-            style={styles.bubble}
-            >
-            <Text>CARI TUKANG SERVICE</Text>
-          </TouchableOpacity> */}
-          <Button block style={styles.btnDark} onPress={Actions.pulseScreen}>
-            <Text style={styles.textBlack}>PILIH LOKASI ANDA</Text>
+          <Button block style={styles.btnDark} onPress={Actions.onLocation}>
+            <Text style={styles.textBlack}>TUKANG ON-LOCATION</Text>
           </Button>
         </View>
       </View>
@@ -94,8 +77,8 @@ class DefaultMarkers extends React.Component {
   }
 }
 
-DefaultMarkers.propTypes = {
+MapRoute.propTypes = {
   provider: MapView.ProviderPropType,
 };
 
-module.exports = DefaultMarkers;
+module.exports = MapRoute;
