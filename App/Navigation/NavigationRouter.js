@@ -43,7 +43,9 @@ import Daftar from '../Containers/Daftar';
 import LupaPassword from '../Containers/LupaPassword';
 
 import TabIcon from '../Navigation/TabIcon';
+import NavBarWithLogo from '../Navigation/NavBarWithLogo';
 
+import { Images } from '../Themes';
 
 /* **************************
 * Documentation: https://github.com/aksonov/react-native-router-flux
@@ -120,6 +122,8 @@ class NavigationRouter extends Component {
                     title="Home"
                     titleStyle={Styles.title}
                     renderLeftButton={NavItems.hamburgerButton}
+                    // navigationBarTitleImage={Images.logoTukangHeader}
+                    navBar={NavBarWithLogo}
                   />
                   <Scene
                     key="inputHardware"
@@ -172,9 +176,10 @@ class NavigationRouter extends Component {
                   <Scene
                     key="tabMyServicesStart"
                     component={TabMyServices}
-                    title="My Services"
-                    titleStyle={Styles.title}
-                    renderLeftButton={NavItems.hamburgerButton}
+                    // title="My Services"
+                    // titleStyle={Styles.title}
+                    // renderLeftButton={NavItems.hamburgerButton}
+                    navBar={NavBarWithLogo}
                   />
                   <Scene
                     key="orderDetail"
@@ -203,9 +208,10 @@ class NavigationRouter extends Component {
                   <Scene
                     key="tabProfileLogin"
                     component={TabProfileLogin}
-                    title="My Account"
-                    titleStyle={Styles.title}
-                    renderLeftButton={NavItems.hamburgerButton}
+                    // title="My Account"
+                    // titleStyle={Styles.title}
+                    // renderLeftButton={NavItems.hamburgerButton}
+                    navBar={NavBarWithLogo}
                     // renderLeftButton={this.renderMenuButton}
                     // renderRightButton={this.renderRightButton}
                   />

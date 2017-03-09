@@ -3,11 +3,13 @@ import {
   View,
   Dimensions,
 } from 'react-native';
-import { Button, Text } from 'native-base';
+import { InputGroup, Input, Icon, Text, Button, ListItem } from 'native-base';
+// import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import MapView from 'react-native-maps';
 import { Actions } from 'react-native-router-flux';
 import styles from './styles';
+// import myTheme from '../themes/base-theme';
 
 const { width, height } = Dimensions.get('window');
 
@@ -54,37 +56,41 @@ class DefaultMarkers extends React.Component {
     return (
       <View style={styles.container}>
         <MapView
-          provider={this.props.provider}
+          // provider={this.props.provider}
           style={styles.map}
-          initialRegion={this.state.region}
-          onPress={(e) => this.onMapPress(e)}
+          initialRegion={{
+            latitude: 37.78825,
+            longitude: -122.4324,
+            latitudeDelta: 0.0922,
+            longitudeDelta: 0.0421,
+          }}
+          // onPress={(e) => this.onMapPress(e)}
         >
-          {this.state.markers.map(marker => (
+          {/* {this.state.markers.map(marker => (
             <MapView.Marker
               key={marker.key}
               coordinate={marker.coordinate}
               pinColor={marker.color}
             />
-          ))}
+          ))} */}
         </MapView>
-        <View style={styles.buttonContainer}>
-          {/* <TouchableOpacity
-            onPress={() => this.setState({ markers: [] })}
-            style={styles.bubble}
-            >
-            <Text>CARI TUKANG SERVICE</Text>
-          </TouchableOpacity> */}
-          <Button block style={styles.btnDark} onPress={Actions.lupa}>
-            <Text style={styles.textBlack}>PILIH LOKASI ANDA</Text>
-          </Button>
+
+        <View style={styles.inputContainer}>
+          <View style={styles.copyListItemTop}>
+            <InputGroup style={styles.whiteInput}>
+              <Icon name="md-pin" style={styles.iconColor} />
+              <Input placeholder="Full Address Here:" />
+            </InputGroup>
+          </View>
+          <View style={styles.copyListItem}>
+            <InputGroup style={styles.bottomInput}>
+              <Icon name="md-create" style={styles.iconColor} />
+              <Input placeholder="Catatan:" style={styles.noteInput} />
+            </InputGroup>
+          </View>
         </View>
+
         <View style={styles.buttonContainer}>
-          {/* <TouchableOpacity
-            onPress={() => this.setState({ markers: [] })}
-            style={styles.bubble}
-            >
-            <Text>CARI TUKANG SERVICE</Text>
-          </TouchableOpacity> */}
           <Button block style={styles.btnDark} onPress={Actions.pulseScreen}>
             <Text style={styles.textBlack}>PILIH LOKASI ANDA</Text>
           </Button>

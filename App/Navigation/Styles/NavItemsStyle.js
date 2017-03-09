@@ -24,7 +24,7 @@ export default StyleSheet.create({
     fontSize: 28,
   },
   searchButton: {
-    marginTop: Metrics.section,
+    // marginTop: Metrics.section,
     marginRight: Metrics.baseMargin,
     alignItems: 'center'
   }

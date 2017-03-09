@@ -61,7 +61,7 @@ class DrawerContent extends Component {
   render () {
     return (
       <ScrollView style={styles.container}>
-        <Image source={Images.logo} style={styles.logo} />
+        <Image source={Images.logoTukangWide} style={styles.logo} />
         <DrawerButton text='Tab Home' onPress={this.handlePressTabHome} />
         <DrawerButton text='Presentation Screen' onPress={this.handlePressPresentationScreen} />
         <DrawerButton text='Component Examples' onPress={this.handlePressComponents} />
