@@ -3,7 +3,7 @@ import {
   View,
   Dimensions,
 } from 'react-native';
-import { InputGroup, Input, Icon, Text, Button, ListItem } from 'native-base';
+import { InputGroup, Input, Icon, Text, Button } from 'native-base';
 // import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import MapView from 'react-native-maps';

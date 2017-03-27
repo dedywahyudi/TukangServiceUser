@@ -1,8 +1,7 @@
 
 import React, { Component } from 'react';
-import { ScrollView, View, TouchableOpacity } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import { Container, Button, Content, Text, List, ListItem, Input, InputGroup } from 'native-base';
-import { Col, Row, Grid } from 'react-native-easy-grid';
 import { Actions } from 'react-native-router-flux';
 import Icon from 'react-native-vector-icons/FontAwesome';
 

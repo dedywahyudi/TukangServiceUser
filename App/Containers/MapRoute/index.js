@@ -2,12 +2,19 @@ import React from 'react';
 import {
   View,
   Dimensions,
+  TouchableOpacity,
 } from 'react-native';
-import { Button, Text } from 'native-base';
+import { InputGroup, Input, Text, Button, ListItem, Thumbnail } from 'native-base';
+
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import MapView from 'react-native-maps';
 import { Actions } from 'react-native-router-flux';
+import { Col, Row, Grid } from 'react-native-easy-grid';
+import myTheme from '../themes/base-theme';
 import styles from './styles';
+
+const sankhadeep = require('../../../img/contacts/sankhadeep.png');
 
 const { width, height } = Dimensions.get('window');
 
@@ -52,7 +59,7 @@ class MapRoute extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <View style={styles.container} theme={myTheme}>
         <MapView
           provider={this.props.provider}
           style={styles.map}
@@ -67,10 +74,40 @@ class MapRoute extends React.Component {
             />
           ))}
         </MapView>
+
+        <View style={styles.inputContainer}>
+          <View style={styles.copyListItemTop}>
+            <InputGroup style={styles.whiteInput}>
+              {/* <Icon name="md-pin" style={styles.iconColor} /> */}
+              <Input placeholder="Full Address Here:" />
+            </InputGroup>
+          </View>
+        </View>
+
         <View style={styles.buttonContainer}>
-          <Button block style={styles.btnDark} onPress={Actions.onLocation}>
+          {/* <Button block style={styles.btnDark} onPress={Actions.onLocation}>
             <Text style={styles.textBlack}>TUKANG ON-LOCATION</Text>
-          </Button>
+          </Button> */}
+          <Grid style={styles.tukangInfo}>
+            <Col>
+              <Button rounded primary style={styles.buttonAlign}>
+                <Icon name="call" style={styles.iconAlign} />
+              </Button>
+            </Col>
+            <Col>
+              <TouchableOpacity onPress={Actions.profileDetail}>
+                <Thumbnail rounded size={100} source={sankhadeep} style={styles.thumbAlign} onPress={Actions.profiledetail} />
+              </TouchableOpacity>
+            </Col>
+            <Col>
+              <Button rounded primary style={styles.buttonAlign}>
+                <Icon name="textsms" style={styles.iconAlign} />
+              </Button>
+            </Col>
+          </Grid>
+          {/* <Button block style={styles.btnDark} onPress={Actions.onLocation}>
+            <Text style={styles.textBlack}>TUKANG ON-LOCATION</Text>
+          </Button> */}
         </View>
       </View>
     );

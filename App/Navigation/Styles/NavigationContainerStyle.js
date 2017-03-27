@@ -1,27 +1,27 @@
 // @flow
 
-import {Colors} from '../../Themes/'
+import {Colors} from '../../Themes/';
 
 export default {
   container: {
-    flex: 1
+    flex: 1,
   },
   navBar: {
-    backgroundColor: Colors.background
+    backgroundColor: Colors.background,
   },
   title: {
-    color: Colors.snow
+    color: Colors.snow,
   },
   leftButton: {
-    tintColor: Colors.snow
+    tintColor: Colors.snow,
   },
   rightButton: {
-    color: Colors.snow
+    color: Colors.snow,
   },
   tabBarStyle: {
-    backgroundColor: Colors.colorTukangBlack
+    backgroundColor: Colors.colorTukangBlack,
   },
   tabBarSelectedItemStyle: {
-    backgroundColor: Colors.colorTukangBlack
+    backgroundColor: Colors.colorTukangBlack,
   },
-}
+};

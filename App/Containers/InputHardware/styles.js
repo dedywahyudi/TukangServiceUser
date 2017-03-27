@@ -83,4 +83,8 @@ export default StyleSheet.create({
     color: Colors.colorTukangWhite,
     fontWeight: 'bold',
   },
+  bottomPlacement: {
+    padding: 20,
+    backgroundColor: Colors.colorTukangDivider,
+  },
 });

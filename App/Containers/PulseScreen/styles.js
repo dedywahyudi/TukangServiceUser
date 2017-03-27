@@ -33,6 +33,8 @@ export default StyleSheet.create({
   buttonPlacement: {
     alignSelf: 'flex-end',
     flexDirection: 'row',
+    backgroundColor: Colors.colorTukangDivider,
+    padding: 20,
   },
   btnDark: {
     zIndex: 2,
@@ -40,8 +42,8 @@ export default StyleSheet.create({
     elevation: 0,
     height: 50,
     flex: 1,
-    marginVertical: 20,
-    marginHorizontal: 20,
+    // marginVertical: 20,
+    // marginHorizontal: 20,
     flexDirection: 'row',
   },
   textBlack: {

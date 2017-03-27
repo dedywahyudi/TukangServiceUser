@@ -36,15 +36,20 @@ export default class InputHardware extends Component { // eslint-disable-line
                     style={styles.multiline}
                   />
                 </ListItem>
-                <ListItem style={[styles.noBorder, styles.noLeftMargin]}>
+                {/* <ListItem style={[styles.noBorder, styles.noLeftMargin]}>
                   <Button block style={styles.btnDark} onPress={Actions.lokasiTukang}>
                     <Text style={styles.textBlack}>PILIH LOKASI ANDA</Text>
                   </Button>
-                </ListItem>
+                </ListItem> */}
               </List>
             </Content>
           </Container>
         </ScrollView>
+        <View style={styles.bottomPlacement}>
+          <Button block style={styles.btnDark} onPress={Actions.lokasiTukang}>
+            <Text style={styles.textBlack}>PILIH LOKASI ANDA</Text>
+          </Button>
+        </View>
       </View>
     );
   }

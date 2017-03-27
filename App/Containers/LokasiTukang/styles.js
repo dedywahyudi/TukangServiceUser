@@ -76,7 +76,8 @@ export default StyleSheet.create({
     alignSelf: 'flex-end',
     flexDirection: 'row',
     // marginBottom: 20,
-    backgroundColor: 'transparent',
+    padding: 20,
+    backgroundColor: Colors.colorTukangDivider,
   },
   listStyle: {
     borderBottomWidth: 0,
@@ -126,8 +127,8 @@ export default StyleSheet.create({
     elevation: 0,
     height: 50,
     flex: 1,
-    marginHorizontal: 20,
-    marginVertical: 20,
+    // marginHorizontal: 20,
+    // marginVertical: 20,
   },
   textBlack: {
     color: Colors.colorTukangBlack,

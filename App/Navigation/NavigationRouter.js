@@ -1,7 +1,7 @@
 // @flow
 
 import React, { Component } from 'react';
-import { Scene, Router } from 'react-native-router-flux';
+import { Scene, Router, Actions } from 'react-native-router-flux';
 import Styles from './Styles/NavigationContainerStyle';
 import NavigationDrawer from './NavigationDrawer';
 import NavItems from './NavItems';
@@ -124,6 +124,7 @@ class NavigationRouter extends Component {
                     renderLeftButton={NavItems.hamburgerButton}
                     // navigationBarTitleImage={Images.logoTukangHeader}
                     navBar={NavBarWithLogo}
+                    hideTabBar={false}
                   />
                   <Scene
                     key="inputHardware"
@@ -132,6 +133,9 @@ class NavigationRouter extends Component {
                     titleStyle={Styles.title}
                     renderBackButton={NavItems.backButton}
                     hideTabBar
+                    rightTitle="Cancel"
+                    rightButtonTextStyle={Styles.title}
+                    onRight={() => { Actions.tabHomeStart(); }}
                   />
                   <Scene
                     key="lokasiTukang"
